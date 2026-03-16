@@ -24,14 +24,14 @@ Please select the PDK for your EDA tool.
 
 The following table highlights key architectural and research-oriented differences between SCCAD-3nm and other publicly available academic 3nm PDKs.
 
-| Feature | FreePDK3 (NCSU) | GT3 (Gatech) | **SCCAD-3nm** |
-|----------|----------------|------|----------------|
-| **Tech Node** | 3nm | 3nm | 3nm |
-| **Device Type** | GAAFET | GAAFET | GAAFET |
-| **Cell Heights** | 5.5-Track | 6-Track | **6-Track, 5-Track** |
-| **Power Rail** | Front-side  | Buried  | Front-side | buried  |
-| **Support Back-side Metal** | No | No | **Yes** |
-| **Provide Files for PDK Development** | No | No | **Yes** |
+| Feature | SCCAD-3nm (USC) |  | FreePDK3 (NCSU) | GT3 (Gatech) |
+|--------|------------------|--|------------------|--------------|
+| Tech Node | 3nm |  | 3nm | 3nm |
+| Device Type | GAAFET |  | GAAFET | GAAFET |
+| Cell Heights | 6-Track | 5-Track | 5.5-Track | 6-Track |
+| Power Rail | Front-side | Buried | Front-side | Buried |
+| BEOL | Front only | Front and back | Front only | Front only |
+| Support for PDK Modification | Yes |  | No | No |
 
 ### Key Advantages of SCCAD-3nm
 
