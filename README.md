@@ -1,7 +1,7 @@
 # SCCAD-3nm-PDK
 
-**SCCAD-3nm-PDK** is an open-source **3 nm Process Design Kit (PDK)** developed by the **SCCAD Group** at the University of Southern California (USC).  
-This PDK is intended for academic research and educational use, enabling exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO).
+**SCCAD-3nm-PDK** is an open-source **3 nm Process Design Kit (PDK)** developed by the **Southern California
+Computer-Aided Design (SCCAD) Group** at the University of Southern California (USC). This PDK is intended for academic research and educational use, enabling exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO).
 
 ---
 
