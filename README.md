@@ -22,8 +22,7 @@ Please select the PDK for your EDA tool.
 
 ## Comparison with Other Academic 3nm PDKs
 
-The following table highlights key architectural and research-oriented differences between SCCAD-3nm and other publicly available academic 3nm PDKs.
-
+The following table summarizes the key feature differences between SCCAD-3nm and other publicly available academic 3nm PDKs.
 
 
 <table border="1" cellspacing="0" cellpadding="6">
