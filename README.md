@@ -81,9 +81,9 @@ The following table summarizes the key feature differences between SCCAD-3nm and
 
 ### Key Advantages of SCCAD-3nm
 
-- Modifiable PDK – Enables researchers to customize technology parameters and explore new design methodologies.
 - Flexible power delivery options – Supports both front-side and buried power rails for studying advanced power distribution schemes.
 - Dual-side BEOL support – Enables exploration of backside routing and advanced interconnect architectures.
+- Modifiable PDK – Enables researchers to customize technology parameters and explore new design methodologies.
 
 ---
 
