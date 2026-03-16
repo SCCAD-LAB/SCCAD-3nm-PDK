@@ -34,57 +34,57 @@ The following table highlights key architectural and research-oriented differenc
 | Support for PDK Modification | Yes |  | No | No |
 
 
-<table>
+<table border="1" cellspacing="0" cellpadding="6">
   <tr>
     <th>Feature</th>
     <th colspan="2">SCCAD-3nm (USC)</th>
-    <th>FreePDK3 (NCSU)</th>
-    <th>GT3 (Gatech)</th>
+    <th align="center">FreePDK3 (NCSU)</th>
+    <th align="center">GT3 (Gatech)</th>
   </tr>
 
   <tr>
     <td>Tech Node</td>
-    <td colspan="2">3nm</td>
-    <td>3nm</td>
-    <td>3nm</td>
+    <td colspan="2" align="center">3nm</td>
+    <td align="center">3nm</td>
+    <td align="center">3nm</td>
   </tr>
 
   <tr>
     <td>Device Type</td>
-    <td colspan="2">GAAFET</td>
-    <td>GAAFET</td>
-    <td>GAAFET</td>
+    <td colspan="2" align="center">GAAFET</td>
+    <td align="center">GAAFET</td>
+    <td align="center">GAAFET</td>
   </tr>
 
   <tr>
     <td>Cell Heights</td>
-    <td>6-Track</td>
-    <td>5-Track</td>
-    <td>5.5-Track</td>
-    <td>6-Track</td>
+    <td align="center">6-Track</td>
+    <td align="center">5-Track</td>
+    <td align="center">5.5-Track</td>
+    <td align="center">6-Track</td>
   </tr>
 
   <tr>
     <td>Power Rail</td>
-    <td>Front-side</td>
-    <td>Buried</td>
-    <td>Front-side</td>
-    <td>Buried</td>
+    <td align="center">Front-side</td>
+    <td align="center">Buried</td>
+    <td align="center">Front-side</td>
+    <td align="center">Buried</td>
   </tr>
 
   <tr>
     <td>BEOL</td>
-    <td>Front only</td>
-    <td>Front and back</td>
-    <td>Front only</td>
-    <td>Front only</td>
+    <td align="center">Front only</td>
+    <td align="center">Front and back</td>
+    <td align="center">Front only</td>
+    <td align="center">Front only</td>
   </tr>
 
   <tr>
     <td>Support for PDK Modification</td>
-    <td colspan="2">Yes</td>
-    <td>No</td>
-    <td>No</td>
+    <td colspan="2" align="center">Yes</td>
+    <td align="center">No</td>
+    <td align="center">No</td>
   </tr>
 </table>
 
