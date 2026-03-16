@@ -81,10 +81,9 @@ The following table summarizes the key feature differences between SCCAD-3nm and
 
 ### Key Advantages of SCCAD-3nm
 
-- Supports **multiple cell-height architectures (6T and 5T)**
-- Enables exploration of **Front-side and Buried Power Rail (FSPR / BPR)**
-- Provides **Back-side Metal support** for advanced power-delivery studies
-- Includes collateral for **PDK development and methodology research**
+- Modifiable PDK – Enables researchers to customize technology parameters and explore new design methodologies.
+- Flexible power delivery options – Supports both front-side and buried power rails for studying advanced power distribution schemes.
+- Dual-side BEOL support – Enables exploration of backside routing and advanced interconnect architectures.
 
 ---
 
