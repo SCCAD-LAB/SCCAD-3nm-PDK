@@ -29,7 +29,7 @@ The following table highlights key architectural and research-oriented differenc
 | **Tech Node** | 3nm | 3nm | 3nm |
 | **Device Type** | GAAFET | GAAFET | GAAFET |
 | **Cell Heights** | 5.5-Track | 6-Track | **6-Track, 5-Track** |
-| **Power Rail ** | Front-side  | Buried  | Front-side and buried (both) |
+| **Power Rail** | Front-side  | Buried  | Front-side and buried (both) |
 | **Support Back-side Metal** | No | No | **Yes** |
 | **Provide Files for PDK Development** | No | No | **Yes** |
 
