@@ -35,27 +35,57 @@ The following table highlights key architectural and research-oriented differenc
 
 
 <table>
-<tr>
-<th>Feature</th>
-<th colspan="2">SCCAD-3nm (USC)</th>
-<th>FreePDK3 (NCSU)</th>
-<th>GT3 (Gatech)</th>
-</tr>
+  <tr>
+    <th>Feature</th>
+    <th colspan="2">SCCAD-3nm (USC)</th>
+    <th>FreePDK3 (NCSU)</th>
+    <th>GT3 (Gatech)</th>
+  </tr>
 
-<tr>
-<td>Tech Node</td>
-<td colspan="2">3nm</td>
-<td>3nm</td>
-<td>3nm</td>
-</tr>
+  <tr>
+    <td>Tech Node</td>
+    <td colspan="2">3nm</td>
+    <td>3nm</td>
+    <td>3nm</td>
+  </tr>
 
-<tr>
-<td>Cell Heights</td>
-<td>6-Track</td>
-<td>5-Track</td>
-<td>5.5-Track</td>
-<td>6-Track</td>
-</tr>
+  <tr>
+    <td>Device Type</td>
+    <td colspan="2">GAAFET</td>
+    <td>GAAFET</td>
+    <td>GAAFET</td>
+  </tr>
+
+  <tr>
+    <td>Cell Heights</td>
+    <td>6-Track</td>
+    <td>5-Track</td>
+    <td>5.5-Track</td>
+    <td>6-Track</td>
+  </tr>
+
+  <tr>
+    <td>Power Rail</td>
+    <td>Front-side</td>
+    <td>Buried</td>
+    <td>Front-side</td>
+    <td>Buried</td>
+  </tr>
+
+  <tr>
+    <td>BEOL</td>
+    <td>Front only</td>
+    <td>Front and back</td>
+    <td>Front only</td>
+    <td>Front only</td>
+  </tr>
+
+  <tr>
+    <td>Support for PDK Modification</td>
+    <td colspan="2">Yes</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
 </table>
 
 ### Key Advantages of SCCAD-3nm
