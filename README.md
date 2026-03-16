@@ -33,6 +33,31 @@ The following table highlights key architectural and research-oriented differenc
 | BEOL | Front only | Front and back | Front only | Front only |
 | Support for PDK Modification | Yes |  | No | No |
 
+
+<table>
+<tr>
+<th>Feature</th>
+<th colspan="2">SCCAD-3nm (USC)</th>
+<th>FreePDK3 (NCSU)</th>
+<th>GT3 (Gatech)</th>
+</tr>
+
+<tr>
+<td>Tech Node</td>
+<td colspan="2">3nm</td>
+<td>3nm</td>
+<td>3nm</td>
+</tr>
+
+<tr>
+<td>Cell Heights</td>
+<td>6-Track</td>
+<td>5-Track</td>
+<td>5.5-Track</td>
+<td>6-Track</td>
+</tr>
+</table>
+
 ### Key Advantages of SCCAD-3nm
 
 - Supports **multiple cell-height architectures (6T and 5T)**
