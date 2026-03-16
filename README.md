@@ -11,7 +11,7 @@ Please select the PDK for your EDA tool.
 | **Synopsys Users** | **Cadence Users** |
 |:---:|:---:|
 | <a href="./synopsys"><img src="https://img.shields.io/badge/Synopsys-PDK-purple?style=for-the-badge&logo=synopsys" height="50"></a> | <a href="./cadence"><img src="https://img.shields.io/badge/Cadence-PDK-red?style=for-the-badge&logo=cadence" height="50"></a> |
-| [📂 Go to Synopsys Files](./synopsys) | [📂 Go to Cadence Files](./cadence) |
+| [📂 Go to Synopsys Files](./PDK-Synopsys) | [📂 Go to Cadence Files](./PDK-Cadence) |
 
 
 
