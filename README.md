@@ -48,14 +48,6 @@ The following table summarizes the key feature differences between SCCAD-3nm and
   </tr>
 
   <tr>
-    <td>Cell Heights</td>
-    <td align="center">6-Track</td>
-    <td align="center">5-Track</td>
-    <td align="center">5.5-Track</td>
-    <td align="center">6-Track</td>
-  </tr>
-
-  <tr>
     <td>Power Rail</td>
     <td align="center">Front-side</td>
     <td align="center">Buried</td>
@@ -69,6 +61,14 @@ The following table summarizes the key feature differences between SCCAD-3nm and
     <td align="center">Front and back</td>
     <td align="center">Front only</td>
     <td align="center">Front only</td>
+  </tr>
+
+  <tr>
+    <td>Cell Heights</td>
+    <td align="center">6-Track</td>
+    <td align="center">5-Track</td>
+    <td align="center">5.5-Track</td>
+    <td align="center">6-Track</td>
   </tr>
 
   <tr>
