@@ -24,8 +24,8 @@ Please select the PDK for your EDA tool.
 
 The following table highlights key architectural and research-oriented differences between SCCAD-3nm and other publicly available academic 3nm PDKs.
 
-| Feature | SCCAD-3nm (USC) |  | FreePDK3 (NCSU) | GT3 (Gatech) |
-|--------|------------------|--|------------------|--------------|
+| Feature | SCCAD-3nm (USC) | SCCAD-3nm (USC) | FreePDK3 (NCSU) | GT3 (Gatech) |
+|--------|------------------|------------------|------------------|--------------|
 | Tech Node | 3nm |  | 3nm | 3nm |
 | Device Type | GAAFET |  | GAAFET | GAAFET |
 | Cell Heights | 6-Track | 5-Track | 5.5-Track | 6-Track |
