@@ -8,10 +8,6 @@ Computer-Aided Design (SCCAD) Group at the University of Southern California (US
 Please select the PDK for your EDA tool.
 
 
-| **Synopsys Users** | **Cadence Users** |
-|:---:|:---:|
-| <a href="./synopsys"><img src="https://img.shields.io/badge/Synopsys-PDK-purple?style=for-the-badge&logo=synopsys" height="50"></a> | <a href="./cadence"><img src="https://img.shields.io/badge/Cadence-PDK-red?style=for-the-badge&logo=cadence" height="50"></a> |
-| [📂 Go to Synopsys Files](./PDK-Synopsys) | [📂 Go to Cadence Files](./PDK-Cadence) |
 
 
 | **Synopsys Users** | **Cadence Users** |
