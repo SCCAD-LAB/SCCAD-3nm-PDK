@@ -125,4 +125,4 @@ The PDK is primarily oriented toward **research and prototyping**, rather than m
 
 ## Contact
 
-For questions or contributions, please contact the SCCAD Group at USC.
+For questions or contributions, please contact the SCCAD Group at USC: Sungwoo Jung (sw.jung@gatech.edu).
