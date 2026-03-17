@@ -5,9 +5,7 @@ Computer-Aided Design (SCCAD) Group at the University of Southern California (US
 
 ---
 
-Please select the PDK for your EDA tool.
-
-
+Our PDK works with the following EDA tools:
 
 
 | **Synopsys Users** | **Cadence Users** |
