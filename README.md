@@ -72,7 +72,7 @@ The following table summarizes the key feature differences between SCCAD-3nm and
 
   <tr>
     <td>Support for PDK Modification</td>
-    <td colspan="2" align="center">Yes</td>
+    <td colspan="2" align="center">Yes (using Synopsys tools)</td>
     <td align="center">No</td>
     <td align="center">No</td>
   </tr>
