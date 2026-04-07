@@ -1,0 +1,25 @@
+extraction_setup \
+    -technology_layer_map \
+MB2  MB2 \
+MB1  MB1 \
+MBPR MBPR \
+M1   M1   \
+M2   M2   \
+M3   M3   \
+M4   M4   \
+M5   M5   \
+M6   M6   \
+M7   M7   \
+M8   M8   \
+M9   M9   \
+VB1  VB1  \
+VTSV VTSV \
+VBPR VBPR \
+V1   V1   \
+V2   V2   \
+V3   V3   \
+V4   V4   \
+V5   V5   \
+V6   V6   \
+V7   V7   \
+V8   V8   \
