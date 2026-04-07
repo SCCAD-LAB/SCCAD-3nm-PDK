@@ -28,8 +28,8 @@ The following table summarizes the key feature differences between SCCAD-3nm and
   <tr>
     <th>Feature</th>
     <th colspan="2">SCCAD-3nm (USC)</th>
-    <th align="center">FreePDK3 (NCSU)</th>
-    <th align="center">GT3 (Gatech)</th>
+    <th align="center">Academic PDK A</th>
+    <th align="center">Academic PDK B</th>
   </tr>
 
   <tr>
