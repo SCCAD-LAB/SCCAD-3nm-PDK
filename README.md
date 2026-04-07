@@ -6,10 +6,9 @@ Computer-Aided Design (SCCAD) Group at the University of Southern California (US
 Our PDK works with the following EDA tools:
 
 
-| **Synopsys Users** | **Cadence Users** |
-|:---:|:---:|
-| <a href="./PDK-Synopsys"><img src="https://img.shields.io/badge/Synopsys-PDK-purple?style=for-the-badge&logo=synopsys" height="50"></a> | <a href="./PDK-Cadence"><img src="https://img.shields.io/badge/Cadence-PDK-red?style=for-the-badge&logo=cadence" height="50"></a> |
-
+| **Synopsys Users** | **Cadence Users** | **OpenROAD Users** |
+|:---:|:---:|:---:|
+| <a href="./PDK-Synopsys"><img src="https://img.shields.io/badge/Synopsys-PDK-purple?style=for-the-badge&logo=synopsys" height="50"></a> | <a href="./PDK-Cadence"><img src="https://img.shields.io/badge/Cadence-PDK-red?style=for-the-badge&logo=cadence" height="50"></a> | <a href="./PDK-OpenROAD"><img src="https://img.shields.io/badge/OpenROAD-PDK-green?style=for-the-badge&logo=openstreetmap" height="50"></a> |
 <!--
 | [📂 Go to Synopsys Files](./PDK-Synopsys) | [📂 Go to Cadence Files](./PDK-Cadence) |
 -->
