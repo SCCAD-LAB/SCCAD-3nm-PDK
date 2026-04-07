@@ -1,19 +1,18 @@
 # SCCAD-3nm-PDK
 
-**SCCAD-3nm-PDK** is an open-source **3 nm Process Design Kit (PDK)** developed by the **SCCAD Group** at the University of Southern California (USC).  
-This PDK is intended for academic research and educational use, enabling exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO).
+SCCAD-3nm-PDK is an open-source 3nm Process Design Kit (PDK) developed by the Southern California
+Computer-Aided Design (SCCAD) Group at the University of Southern California (USC). This PDK is intended for academic research and educational use, enabling exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO).
 
----
-
-Please select the PDK for your EDA tool.
+Our PDK works with the following EDA tools:
 
 
 | **Synopsys Users** | **Cadence Users** |
 |:---:|:---:|
-| <a href="./synopsys"><img src="https://img.shields.io/badge/Synopsys-PDK-purple?style=for-the-badge&logo=synopsys" height="50"></a> | <a href="./cadence"><img src="https://img.shields.io/badge/Cadence-PDK-red?style=for-the-badge&logo=cadence" height="50"></a> |
-| [📂 Go to Synopsys Files](./synopsys) | [📂 Go to Cadence Files](./cadence) |
+| <a href="./PDK-Synopsys"><img src="https://img.shields.io/badge/Synopsys-PDK-purple?style=for-the-badge&logo=synopsys" height="50"></a> | <a href="./PDK-Cadence"><img src="https://img.shields.io/badge/Cadence-PDK-red?style=for-the-badge&logo=cadence" height="50"></a> |
 
-
+<!--
+| [📂 Go to Synopsys Files](./PDK-Synopsys) | [📂 Go to Cadence Files](./PDK-Cadence) |
+-->
 
 
 
@@ -22,23 +21,68 @@ Please select the PDK for your EDA tool.
 
 ## Comparison with Other Academic 3nm PDKs
 
-The following table highlights key architectural and research-oriented differences between SCCAD-3nm and other publicly available academic 3nm PDKs.
+The following table summarizes the key feature differences between SCCAD-3nm and other publicly available academic 3nm PDKs.
 
-| Feature | FreePDK3 (NCSU) | GT3 (Gatech) | **SCCAD-3nm** |
-|----------|----------------|------|----------------|
-| **Tech Node** | 3nm | 3nm | 3nm |
-| **Device Type** | GAAFET | GAAFET | GAAFET |
-| **Cell Heights** | 5.5-Track | 6-Track | **6-Track, 5-Track** |
-| **Power Rail (PR)** | Front-side PR (FSPR) | Buried PR (BPR) | **FSPR, BPR** |
-| **Support Back-side Metal** | No | No | **Yes** |
-| **Provide Files for PDK Development** | No | No | **Yes** |
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <tr>
+    <th>Feature</th>
+    <th colspan="2">SCCAD-3nm (USC)</th>
+    <th align="center">FreePDK3 (NCSU)</th>
+    <th align="center">GT3 (Gatech)</th>
+  </tr>
+
+  <tr>
+    <td>Tech Node</td>
+    <td colspan="2" align="center">3nm</td>
+    <td align="center">3nm</td>
+    <td align="center">3nm</td>
+  </tr>
+
+  <tr>
+    <td>Device Type</td>
+    <td colspan="2" align="center">GAAFET</td>
+    <td align="center">GAAFET</td>
+    <td align="center">GAAFET</td>
+  </tr>
+
+  <tr>
+    <td>Power Rail</td>
+    <td align="center">Front-side</td>
+    <td align="center">Buried</td>
+    <td align="center">Front-side</td>
+    <td align="center">Buried</td>
+  </tr>
+
+  <tr>
+    <td>BEOL</td>
+    <td align="center">Front only</td>
+    <td align="center">Front and back</td>
+    <td align="center">Front only</td>
+    <td align="center">Front only</td>
+  </tr>
+
+  <tr>
+    <td>Cell Heights</td>
+    <td align="center">6-Track</td>
+    <td align="center">5-Track</td>
+    <td align="center">5.5-Track</td>
+    <td align="center">6-Track</td>
+  </tr>
+
+  <tr>
+    <td>Support for PDK Modification</td>
+    <td colspan="2" align="center">Yes (using Synopsys tools)</td>
+    <td align="center">No</td>
+    <td align="center">No</td>
+  </tr>
+</table>
 
 ### Key Advantages of SCCAD-3nm
 
-- Supports **multiple cell-height architectures (6T and 5T)**
-- Enables exploration of **Front-side and Buried Power Rail (FSPR / BPR)**
-- Provides **Back-side Metal support** for advanced power-delivery studies
-- Includes collateral for **PDK development and methodology research**
+- Flexible power delivery options – Supports both front-side and buried power rails for studying advanced power distribution schemes.
+- Dual-side BEOL support – Enables exploration of backside routing and advanced interconnect architectures.
+- Modifiable PDK – Enables researchers to customize technology parameters and explore new design methodologies.
 
 ---
 
@@ -80,4 +124,4 @@ The PDK is primarily oriented toward **research and prototyping**, rather than m
 
 ## Contact
 
-For questions or contributions, please contact the SCCAD Group at USC.
+For questions or contributions, please contact the SCCAD Group at USC: Sungwoo Jung (sw.jung@gatech.edu).
