@@ -107,17 +107,17 @@ The repository includes the following major components:
 
 ---
 
-## Supported Design Flow
+## Future Plans
 
-The SCCAD-3nm PDK is compatible with a standard digital implementation flow, including:
+We plan to support the following contents in the future :
 
-1. Logic synthesis
-2. Placement and routing
-3. Parasitic extraction
-4. Static timing analysis
-5. Physical verification (DRC/LVS)
+1. Physical Design Support for 3D IC
+2. PDK Support for 3D IC
+3. Back-side Clock/Signal/Power Routing 
+4. Physical Design Support for 2.5D IC with Heterogeneous Chiplets
 
-The PDK is primarily oriented toward **research and prototyping**, rather than manufacturing signoff.
+
+
 
 ---
 
