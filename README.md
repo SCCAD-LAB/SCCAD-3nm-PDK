@@ -117,12 +117,11 @@ The repository includes the following major components:
 
 ## Future Plans
 
-We plan to support the following contents in the future :
+We plan to support the following contents in the future:
 
-1. Physical Design Support for 3D IC
-2. PDK Support for 3D IC
-3. Back-side Clock/Signal/Power Routing 
-4. Physical Design Support for 2.5D IC with Heterogeneous Chiplets
+1. Physical Design Flow Support for 3D IC
+2. Backside Clock, Signal, and Power Routing 
+3. Physical Design Support for 2.5D Heterogeneous Integration
 
 
 
