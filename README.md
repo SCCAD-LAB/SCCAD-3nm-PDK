@@ -75,6 +75,14 @@ The following table summarizes the key feature differences between SCCAD-3nm and
     <td align="center">No</td>
     <td align="center">No</td>
   </tr>
+
+<tr>
+    <td>OpenROAD Compatibility</td>
+    <td colspan="2" align="center">Yes</td>
+    <td align="center">Not confirmed</td>
+    <td align="center">Not confirmed</td>
+  </tr>
+  
 </table>
 
 ### Key Advantages of SCCAD-3nm
