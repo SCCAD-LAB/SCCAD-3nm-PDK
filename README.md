@@ -117,8 +117,7 @@ The repository includes the following major components:
 
 ## Contributors
 
-This PDK was developed under the supervision of **Prof. Sung Kyu Lim** 
-(University of Southern California).
+This PDK was developed under the supervision of **Prof. Sung Kyu Lim**.
 
 | Name | Contribution |
 | --- | --- |
