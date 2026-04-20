@@ -115,6 +115,18 @@ The repository includes the following major components:
 
 ---
 
+## Contributors
+
+This PDK was developed under the supervision of **Prof. Sung Kyu Lim**.
+
+| Name | Contribution |
+| --- | --- |
+| **Junsik Yoon** | PDK Development |
+| **Sandra Shaji** | PDK Development |
+| **Sungwoo Jung** | GitHub page and documentation |
+| **Zheng Yang** | OpenROAD setup and compatibility |
+---
+
 ## Future Plans
 
 We plan to support the following contents in the future:
