@@ -1,18 +1,10 @@
-* BSD 3-Clause License
-*
-* Copyright (c) 2026 <Sungwoo Jung, Cheng-Yu Tsai, Amaan Rahman, Junsik Yoon, Sandra Maria Shaji, Sung Kyu Lim >, University of Southern California
-*
-* Redistribution and use in source and binary forms, with or without
-* modification, are permitted under the BSD 3-Clause License.
-* See the LICENSE file in the project root for full license terms.
-
  
 .option post nomod ingold=2 vntol=1e-10 numdgt=5 reli=1e-4 relv=1e-4
  
 vg gate  0 vgs
 vd drain 0 vds
 vb bulk  0 0.00
-m1 drain gate 0 bulk nmos_lvt w=3e-8 l=1.2e-8 nfin=1
+m1 drain gate 0 bulk nmos_lvt w=2e-8 l=1.2e-8 nfin=1
  
 .model nmos_lvt NMOS level=72 
 .include "model_card.nmos"

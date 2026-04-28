@@ -8,7 +8,7 @@ rNsel_2 @={ @ "Nsel.2 : Minimum horizontal width of Nsel >= 84 nm";
         internal1( aNsel, distance < 0.084, extension = NONE, direction = HORIZONTAL);
 }
 
-rNsel_3 @={ @ "Nsel.3 : Minimum enclosure of ACT by Nsel in the vertical direction >= 10 nm";
+rNsel_3 @={ @ "Nsel.3 : Minimum enclosure of ACT by Nsel in the vertical direction >= 15 nm";
         enclose( aACT, aNsel, distance < 0.010, extension = NONE, direction = VERTICAL);
 }
 

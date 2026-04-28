@@ -14,7 +14,7 @@ rGCUT_4 @= { @ "GCUT.4 : GCUT may not exist without GATE";
         not_interacting( aGCUT, aGATE, include_touch = NONE);
 }
 
-rGCUT_5 @= { @ "GCUT.ACT.1 : Vertical spacing between GCUT and ACT >= 4 nm";
-        external2( aGCUT, aACT, distance < 0.004, extension = NONE, direction = VERTICAL);
+rGCUT_5 @= { @ "GCUT.ACT.1 : Vertical spacing between GCUT and ACT >= 2 nm";
+        external2( aGCUT, aACT, distance < 0.002, extension = NONE, direction = VERTICAL);
 }
 

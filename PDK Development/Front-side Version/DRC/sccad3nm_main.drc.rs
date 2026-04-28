@@ -1,10 +1,3 @@
-//* BSD 3-Clause License
-//*
-//* Copyright (c) 2026 <Sungwoo Jung, Cheng-Yu Tsai, Amaan Rahman, Junsik Yoon, Sandra Maria Shaji, Sung Kyu Lim >, University of Southern California
-//*
-//* Redistribution and use in source and binary forms, with or without
-//* modification, are permitted under the BSD 3-Clause License.
-//* See the LICENSE file in the project root for full license terms.
 
 #define SELECTABLE_VIOLATION_NAMES
 #define ICV_ENABLE_WIDE_ANGLED
@@ -23,7 +16,7 @@ aSDT        = assign({ { 88 } });
 tSDT	    = assign_text({ { 88 } });
 aNsel       = assign({ { 12 } });
 aPsel       = assign({ { 13 } });
-aVBPR       = assign({ { 102 } });
+aVBPR       = assign({ { 14 } });
 aMBPR       = assign({ { 103 } });
 tMBPR       = assign_text({ { 103 } });
 aV0         = assign({ { 18 } });

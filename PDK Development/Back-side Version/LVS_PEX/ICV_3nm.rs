@@ -1,12 +1,3 @@
-/*********************************************************************************
-* BSD 3-Clause License
-*
-* Copyright (c) 2026 <Sungwoo Jung, Cheng-Yu Tsai, Amaan Rahman, Junsik Yoon, Sandra Maria Shaji, Sung Kyu Lim >, University of Southern California
-*
-* Redistribution and use in source and binary forms, with or without
-* modification, are permitted under the BSD 3-Clause License.
-* See the LICENSE file in the project root for full license terms.
-*********************************************************************************/
 #include <icv.rh>
 
 library(

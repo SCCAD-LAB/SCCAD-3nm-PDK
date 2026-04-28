@@ -19,23 +19,32 @@ rVG_4 @= { @ "VG.4 : VG may not exist without GATE";
         not_interacting(aVG, aGATE, include_touch = NONE);
 }
 
+// not_inside might be sufficient as they have same min width
 rVG_5 @= { @ "VG.5 : VG must completely lie inside GATE and its vertical edges must coincide with those of GATE";
         not_inside(aVG, aGATE, include_touch = ALL);
 }
 
 
-rVG_6 @= { @ "VG.6 : VG must be rectangle";
+// VG.6 vertical spacing between VG
+
+rVG_7 @= { @ "VG.7 : VG must be rectangle";
         not_rectangles(aVG);
 }
 
-rVG_8 @= { @ "VG.M0.1 : VG must completely lie inside M0";
+
+// VG.GCUT.1 vertical spacing between VG and GCUT
+
+
+rVG_9 @= { @ "VG.M0.1 : VG must completely lie inside M0";
         not_inside(aVG, aM0, include_touch = ALL);
 }
 
-rVG_9 @= { @ "VG.M0.2 : VG enclosure by M0 on two opposite sides in the horizontal direction: minimum 4 nm";
+rVG_10 @= { @ "VG.M0.2 : VG enclosure by M0 on two opposite sides in the horizontal direction: minimum 4 nm";
         enclose(aVG, aM0, < 0.004, extension = NONE, direction = HORIZONTAL);
 }
 
-rVG_10 @= { @ "VG.ACT.1 : VG and ACT vertical spacing >= 6 nm";
+// VG.M0.3 VG horizontal edges must align with M0 (may be redundant)
+
+rVG_12 @= { @ "VG.ACT.1 : VG and ACT vertical spacing >= 6 nm";
         external2( aVG, aACT, distance < 0.006, extension = RADIAL, direction = VERTICAL);
 }
