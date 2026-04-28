@@ -1,6 +1,6 @@
 
 Technology {
-	name = "OA MW tech conversion"
+	name = "3nm_GAA_BPR"
 	dielectric = 3.73e-05
 	gridResolution = 1
 	unitLengthName = "micron"
@@ -678,11 +678,11 @@ Layer "MB1" {
 	color				= "yellow"
 	lineStyle			= "solid"
 	pattern				= "backSlash"
-	pitch				= 0.08
+	pitch				= 0.12
 	minArea = 0.01
-	minSpacing = 0.04
-	minWidth = 0.04
-	defaultWidth = 0.04
+	minSpacing = 0.06
+	minWidth = 0.06
+	defaultWidth = 0.06
 }
 
 
@@ -711,11 +711,11 @@ Layer "MB2" {
 	color				= "yellow"
 	lineStyle			= "solid"
 	pattern				= "backSlash"
-	pitch				= 0.08
+	pitch				= 0.12
 	minArea = 0.01
-	minSpacing = 0.04
-	minWidth = 0.04
-	defaultWidth = 0.04
+	minSpacing = 0.06
+	minWidth = 0.06
+	defaultWidth = 0.06
 }
 
 

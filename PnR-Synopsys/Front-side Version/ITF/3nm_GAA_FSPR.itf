@@ -1,7 +1,3 @@
-$ Technology: 3nm
-$ Date: 05/18/2021
-$ Name: Junsik Yoon
-$ Comments: ITF starts from top to bottom (ICT: bottom to top)
 
 TECHNOLOGY = 3nm_GAA_FSPR
 BACKGROUND_ER = 1.0

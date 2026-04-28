@@ -1,5 +1,5 @@
 Technology {
-	name = "OA MW tech conversion"
+	name = "3nm_GAA_FSPR"
 	dielectric = 3.73e-05
 	gridResolution = 1
 	unitLengthName = "micron"

@@ -1,7 +1,3 @@
-$ Technology: 3nm
-$ Date: 05/18/2021
-$ Name: Junsik Yoon
-$ Comments: ITF starts from top to bottom (ICT: bottom to top)
 
 TECHNOLOGY = 3nm_GAA_BPR
 BACKGROUND_ER = 1.0
@@ -287,8 +283,8 @@ DIELECTRIC ILDVB2 { THICKNESS=0.080   ER=2.9 }
 	$ --------------------------------------------------------------------
 
 VIA VB1	    { FROM=MB2   TO=MB1 AREA=0.0016    RPV=4.04        CRT1=4.0e-03 CRT2=0}
-VIA VTSV    { FROM=MB1  TO=MBPR AREA=0.0036    RPV=5           CRT1=4.0e-03 CRT2=0}
-VIA VBPR    { FROM=MBPR  TO=SDT AREA=0.000216  RPV=74.6        CRT1=4.0e-03 CRT2=0}
+VIA VTSV    { FROM=MB1  TO=MBPR AREA=0.003600  RPV=5           CRT1=4.0e-03 CRT2=0}
+VIA VBPR    { FROM=MBPR  TO=SDT AREA=0.000240  RPV=74.6        CRT1=4.0e-03 CRT2=0}
 VIA V0LISD  { FROM=LISD  TO=M1  AREA=0.000144  RPV=63.5282407  CRT1=4.0e-03 CRT2=0}
 VIA V0LIG   { FROM=LIG   TO=M1  AREA=0.000144  RPV=63.5282407  CRT1=4.0e-03 CRT2=0}
 VIA V1       { FROM=M1   TO=M2  AREA=0.000144  RPV=63.5282407  CRT1=4.0e-03 CRT2=0}
