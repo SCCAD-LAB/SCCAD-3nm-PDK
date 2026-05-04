@@ -1,28 +1,3 @@
-# Scaled down LEF created by ScaleLEFMacro.pl
-# Original LEF: 16nm/HD_1024X66M8B2.lef
-# Don't forget to change metal layer LEF separately!
-
-# Copyright (c) 1993 - 2021 ARM Limited. All Rights Reserved.
-# Use of this Software is subject to the terms and conditions of the
-# applicable license agreement with ARM Limited.
-
-# PhyVGen V 8.22.0
-# ARM Version r3p2
-# Creation Date: Thu Sep  9 16:13:23 2021
-
-
-# Memory Configuration:
-# ~~~~~~~~~~~~~~~~~~~~~
-#  -activity_factor 50 -atf off -back_biasing off -bits 66 -bmux on
-# -bus_notation on -check_instname on -compiler_type sp -diodes on -drive 6
-# -ema on -flexible_banking 2 -frequency 1000 -instname HD_1024X66M8B2
-# -left_bus_delim "[" -lren_bankmask off -metal_stack 2Xa1Xd -mux 8 -mvt LP
-# -name_case upper -pipeline off -power_gating off -power_type otc -prefix ""
-# -pwr_gnd_rename vddpe:VDDPE,vddce:VDDCE,vsse:VSSE -rcols 2 -redundancy off
-# -retention on -right_bus_delim "]" -rows_p_bl 256 -rrows 0 -scan on -ser none
-# -site_def off -top_layer m5-m10 -vmin_assist on -words 1024 -write_mask on
-# -write_thru off -corners tt_0p80v_0p80v_25c
-# 
 
 VERSION 5.7 ;
 BUSBITCHARS "[]" ;

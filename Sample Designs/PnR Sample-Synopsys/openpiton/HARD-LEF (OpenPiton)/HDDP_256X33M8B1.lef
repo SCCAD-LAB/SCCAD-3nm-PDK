@@ -1,29 +1,3 @@
-# Scaled down LEF created by ScaleLEFMacro.pl
-# Original LEF: 16nm/HDDP_256X33M8B1.lef
-# Don't forget to change metal layer LEF separately!
-
-# Copyright (c) 1993 - 2021 ARM Limited. All Rights Reserved.
-# Use of this Software is subject to the terms and conditions of the
-# applicable license agreement with ARM Limited.
-
-# PhyVGen V 8.22.0
-# ARM Version r3p1
-# Creation Date: Sat Sep 18 23:08:54 2021
-
-
-# Memory Configuration:
-# ~~~~~~~~~~~~~~~~~~~~~
-#  -activity_factor 50 -atf off -back_biasing off -bits 33 -bmux on
-# -bus_notation on -check_instname on -compiler_type dp -diodes on -drive 6
-# -ema on -flexible_banking 1 -frequency 1000 -instname HDDP_256X33M8B1
-# -left_bus_delim "[" -lren_bankmask off -metal_stack 2Xa1Xd -mux 8 -mvt LP
-# -name_case upper -pipeline off -power_gating off -power_type otc -prefix ""
-# -pwr_gnd_rename vddpe:VDDPE,vddce:VDDCE,vsse:VSSE -rcols 2 -redundancy on
-# -retention on -right_bus_delim "]" -rows_p_bl 256 -rrows 0 -scan on -ser none
-# -site_def off -vmin_assist off -words 256 -write_mask on -write_thru off
-# -corners
-# ffgnp_0p88v_0p88v_0c,ffgnp_0p88v_0p88v_125c,ffgnp_0p88v_0p88v_m40c,ssgnp_0p72v_0p72v_0c,ssgnp_0p72v_0p72v_125c,ssgnp_0p72v_0p72v_m40c,tt_0p72v_0p72v_0c,tt_0p80v_0p80v_25c,tt_0p80v_0p80v_85c
-# 
 
 VERSION 5.7 ;
 BUSBITCHARS "[]" ;
