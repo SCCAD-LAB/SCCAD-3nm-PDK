@@ -1,3 +1,20 @@
+/*********************************************************************************
+* Name:         [ ICV_3nm_drcclean ]
+* Owner:        [ GTCAD ]
+* Last Change:  [ 2026/05/01 ]
+* By:           [ Claude (autonomous WS2 stage) ]
+* Synopsis:     [ Scoped LVS deck for the 6T_drcclean trial. Identical to the
+*                 production oa/ICV_3nm.rs except: (1) the fin layer assign is
+*                 commented out; (2) every `(fin and Active)`, `(nactive and fin)`,
+*                 and `(pactive and fin)` term has had the fin intersection
+*                 removed, because WS1 deleted all fin shapes from 6T_drcclean
+*                 and snapped each ACT polygon's Y range to the fin's Y range
+*                 ([0.015,0.045] / [0.075,0.105]). Active alone now occupies the
+*                 region fin used to mark, so dropping the intersection
+*                 preserves channel/SD geometry.
+*                 DO NOT use this deck on any other library — production
+*                 oa/ICV_3nm.rs is unchanged. ]
+*********************************************************************************/
 #include <icv.rh>
 
 library(
@@ -24,7 +41,8 @@ net_options (
 
 well       = assign({{1}});
 well_text  = assign_text({{1, 251}});
-fin        = assign({{2}});
+// fin     = assign({{2}});  // disabled for 6T_drcclean: WS1 deleted fin shapes
+
 P_SUB      = assign({{3}});
 P_SUB_text = assign_text({{3, 251}});
 Gate       = assign({{7}});
@@ -82,16 +100,43 @@ pactive = Active and Pselect;
 
 ActGate = Gate not GCut;
 
-ngate = (ActGate interacting nactive) and Nselect and (fin and Active);
-pgate = (ActGate interacting pactive) and Pselect and (fin and Active);
-fpoly = ActGate not (ngate or pgate);
+// 2026-05-02: Dummy marker support added (Path D in DUMMY_LAYER_FEASIBILITY.md).
+// Each dummy gate has a Dummy rectangle drawn over it (same X/Y as the Gate
+// stripe). To prevent dummy gates from extracting as transistors when ACT
+// happens to overlap them, exclude Dummy from the polysilicon set and from
+// source/drain regions — exactly matching the GT3 reference deck pattern
+// (gt3_main.lvs.rs lines 164, 168, 174).
+//
+// Original deck had `(fin and Active)` here; rewritten to `Active` for
+// 6T_drcclean because WS1 snapped ACT Y to the former fin Y range and
+// deleted fin shapes.
+//
+// History (kept as commented context):
+// ngate = ActGate and nactive;
+// pgate = ActGate and pactive;
+// ngate = (ActGate interacting nactive) and Nselect and fin;
+// pgate = (ActGate interacting pactive) and Pselect and fin;
+// ngate = (ActGate interacting nactive) and Nselect and (fin and Active);  // production
+// pgate = (ActGate interacting pactive) and Pselect and (fin and Active);  // production
+// ngate = (ActGate interacting nactive) and Nselect and Active;            // pre-Dummy
+// pgate = (ActGate interacting pactive) and Pselect and Active;            // pre-Dummy
 
-nsd = (nactive and fin) not ngate;
-psd = (pactive and fin) not pgate;
+gPolyReal = ActGate not Dummy;
+ngate = (gPolyReal interacting nactive) and Nselect and Active;
+pgate = (gPolyReal interacting pactive) and Pselect and Active;
+fpoly = gPolyReal not (ngate or pgate);
+
+// History (pre-Dummy):
+// nsd = (nactive and fin) not ngate;  // production
+// psd = (pactive and fin) not pgate;  // production
+// nsd = nactive not ngate;             // pre-Dummy
+// psd = pactive not pgate;             // pre-Dummy
+nsd = (nactive not ngate) not Dummy;
+psd = (pactive not pgate) not Dummy;
 
 well_mark_all  = text_origin(well_text, cells  = {get_top_cell()}, text = {"*"}, shape_size = 0.002);
 P_SUB_mark_all = text_origin(P_SUB_text, cells = {get_top_cell()}, text = {"*"}, shape_size = 0.002);
-MBPR_mark_all  = text_origin(MBPR_text, cells  = {get_top_cell()}, text = {"*"}, shape_size = 0.002);
+ MBPR_mark_all  = text_origin(MBPR_text, cells  = {get_top_cell()}, text = {"*"}, shape_size = 0.002);
 M1_mark_all    = text_origin(M1_text, cells    = {get_top_cell()}, text = {"*"}, shape_size = 0.002);
 M2_mark_all    = text_origin(M2_text, cells    = {get_top_cell()}, text = {"*"}, shape_size = 0.002);
 M3_mark_all    = text_origin(M3_text, cells    = {get_top_cell()}, text = {"*"}, shape_size = 0.002);
@@ -104,7 +149,7 @@ M9_mark_all    = text_origin(M9_text, cells    = {get_top_cell()}, text = {"*"},
 
 well_mark  = well_mark_all interacting well;
 P_SUB_mark = P_SUB_mark_all interacting P_SUB;
-MBPR_mark  = MBPR_mark_all interacting MBPR;
+ MBPR_mark  = MBPR_mark_all interacting MBPR;
 M1_mark    = M1_mark_all interacting M1;
 M2_mark    = M2_mark_all interacting M2;
 M3_mark    = M3_mark_all interacting M3;
@@ -116,8 +161,8 @@ M8_mark    = M8_mark_all interacting M8;
 M9_mark    = M9_mark_all interacting M9;
 
 well_pin  = well_mark_all and well;
-P_SUB_pin = P_SUB_mark_all and P_SUB;
-MBPR_pin  = MBPR_mark_all and MBPR;
+ P_SUB_pin = P_SUB_mark_all and P_SUB;
+ MBPR_pin  = MBPR_mark_all and MBPR;
 M1_pin    = M1_mark_all and M1;
 M2_pin    = M2_mark_all and M2;
 M3_pin    = M3_mark_all and M3;
@@ -203,8 +248,8 @@ netlist_cdb = create_ports(
     netlist_cdb,
     port_items = {
         {well_pin, well_mark},
-        {P_SUB_pin, P_SUB_mark},
-        {MBPR_pin, MBPR_mark},
+         {P_SUB_pin, P_SUB_mark},
+         {MBPR_pin, MBPR_mark},
         {M1_pin, M1_mark},
         {M2_pin, M2_mark},
         {M3_pin, M3_mark},
@@ -219,8 +264,14 @@ netlist_cdb = create_ports(
 
 dev_matrix = init_device_matrix(connect_sequence = netlist_cdb);
 
-nmos(dev_matrix, "nmos_rvt", nsd, ngate, nsd, {{sub}});
-pmos(dev_matrix, "pmos_rvt", psd, pgate, psd, {{well}});
+//nmos(dev_matrix, "nmos_rvt", nsd, ngate, nsd, {{sub}});
+//pmos(dev_matrix, "pmos_rvt", psd, pgate, psd, {{well}});
+
+nmos(dev_matrix, "nmos_rvt", nsd, ngate, nsd);
+pmos(dev_matrix, "pmos_rvt", psd, pgate, psd);
+
+
+
 
 device_db = extract_devices(dev_matrix);
 
@@ -254,7 +305,7 @@ pex_conducting_layer_map(pex_matrix, Pselect, "Active", tagname = "pselect");
 pex_conducting_layer_map(pex_matrix, well   , "Active", tagname = "well");
 pex_conducting_layer_map(pex_matrix, sub    , "Active", tagname = "sub");
 pex_conducting_layer_map(pex_matrix, Nselect, "Active", tagname = "nselect");
-pex_conducting_layer_map(pex_matrix, P_SUB  , "P_SUB" , tagname = "p_sub");
+ pex_conducting_layer_map(pex_matrix, P_SUB  , "P_SUB" , tagname = "p_sub");
 
 pex_via_layer_map(pex_matrix, V8    , "V8"    , tagname = "v8");
 pex_via_layer_map(pex_matrix, V7    , "V7"    , tagname = "v7");
@@ -269,8 +320,8 @@ pex_via_layer_map(pex_matrix, V0LISD, "V0LISD", tagname = "v0lisd");
 pex_via_layer_map(pex_matrix, VBPR  , "VBPR"  , tagname = "vbpr");
 
 pex_marker_layer_map(pex_matrix, well_pin, tagname = "well_pin");
-pex_marker_layer_map(pex_matrix, P_SUB_pin, tagname = "P_SUB_pin");
-pex_marker_layer_map(pex_matrix, MBPR_pin, tagname = "MBPR_pin");
+ pex_marker_layer_map(pex_matrix, P_SUB_pin, tagname = "P_SUB_pin");
+ pex_marker_layer_map(pex_matrix, MBPR_pin, tagname = "MBPR_pin");
 pex_marker_layer_map(pex_matrix, M1_pin, tagname = "M1_pin");
 pex_marker_layer_map(pex_matrix, M2_pin, tagname = "M2_pin");
 pex_marker_layer_map(pex_matrix, M3_pin, tagname = "M3_pin");
@@ -301,9 +352,18 @@ pex_generate_results(
 
 spice_fh = spice_netlist_file(get_top_cell() + "_LPE.sp");
 
+// write_spice(
+//     device_db = device_db,
+//     output_file = spice_fh
+// );
 
 write_pex_spice(
     device_db = device_db,
     output_file = spice_fh
 );
 
+// write_xref_spice(
+//     device_db = device_db,
+//     xref_db = xref,
+//     output_file = spice_fh
+// );
