@@ -142,4 +142,4 @@ We plan to support the following contents in the future:
 
 ## Contact
 
-For questions or contributions, please contact the SCCAD Group at USC: Sungwoo Jung (sw.jung@gatech.edu) and Yen-Hsiang (yhhuang@gatech.edu).
+For questions or contributions, please contact the SCCAD Group at USC: Sungwoo Jung (sw.jung@gatech.edu) and Yen-Hsiang Huang (yhhuang@gatech.edu).
