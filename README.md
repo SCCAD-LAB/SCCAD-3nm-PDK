@@ -28,8 +28,8 @@ Key limitations include the lack of silicon-calibrated device and interconnect m
 We gratefully acknowledge the following contributors:
 | Name | Contribution |
 | --- | --- |
-| **Junsik Yoon (Synopsys)** | PDK Development |
-| **Sandra Shaji (Samsung)** | PDK Development |
+| **Junsik Yoon (Synopsys)** | PDK development |
+| **Sandra Shaji (Samsung)** | PDK development |
 | **Sungwoo Jung (Georgia Tech)** | PDK update, GitHub page development and documentation |
 | **Zheng Yang (Georgia Tech)** | OpenROAD setup and compatibility |
 ---
@@ -46,6 +46,6 @@ We plan to support the following contents in the future:
 
 ---
 
-## Contact
+### Contact
 
-For questions or contributions, please contact the SCCAD Group: Sungwoo Jung (sw.jung@gatech.edu) and Yen-Hsiang Huang (yhhuang@gatech.edu).
+For questions or contributions, please contact the SCCAD Lab: Sungwoo Jung (sw.jung@gatech.edu) and Yen-Hsiang Huang (yhhuang@gatech.edu).
