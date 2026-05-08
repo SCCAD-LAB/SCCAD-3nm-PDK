@@ -5,12 +5,7 @@ SCCAD 3nm PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a
 - Flexible power delivery options – Supports both front-side and buried power rails for studying advanced power distribution schemes.
 - Dual-side BEOL support – Enables exploration of backside routing and advanced interconnect architectures.
 - <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PDK%20Development">Modifiable PDK</a> – Enables researchers to customize technology parameters and explore new design methodologies.
-
-Our PDK works with the following EDA tools:
-
-| **Synopsys Users** | **Cadence Users** | **OpenROAD Users** |
-|:---:|:---:|:---:|
-| <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Synopsys"><img src="https://img.shields.io/badge/Synopsys-PDK-purple?style=for-the-badge&logo=synopsys" height="50"></a>| <a href="./PDK-Cadence"><img src="https://img.shields.io/badge/Cadence-PDK-red?style=for-the-badge&logo=cadence" height="50"></a> | <a href="./PDK-OpenROAD"><img src="https://img.shields.io/badge/OpenROAD-PDK-green?style=for-the-badge" height="50"></a> |
+- Comprehensive tool support: Our PDK works with <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Synopsys">Synopsys</a> physical design tools.
 
 
 
