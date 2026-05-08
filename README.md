@@ -29,10 +29,10 @@ This PDK was developed under the supervision of **Prof. Sung Kyu Lim**.
 
 | Name | Contribution |
 | --- | --- |
-| **Junsik Yoon** | PDK Development |
-| **Sandra Shaji** | PDK Development |
-| **Sungwoo Jung** | GitHub page and documentation |
-| **Zheng Yang** | OpenROAD setup and compatibility |
+| **Junsik Yoon (Synopsys)** | PDK Development |
+| **Sandra Shaji (Samsung)** | PDK Development |
+| **Sungwoo Jung (Georgia Tech)** | GitHub page and documentation |
+| **Zheng Yang (Georgia Tech)** | OpenROAD setup and compatibility |
 ---
 
 ## Future Plans
