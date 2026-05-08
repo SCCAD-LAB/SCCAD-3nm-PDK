@@ -18,8 +18,8 @@ SCCAD 3nm supports customization through its open, modular structure, with direc
 
 ### Room for Improvement
 Current limitations include the lack of silicon-calibrated device and interconnect models, a relatively small standard cell library, and simplified signoff infrastructure (DRC/LVS, variability, reliability, extraction). Limited co-optimization across devices, interconnect, and libraries can also lead to skewed PPA if not carefully managed. Enhancing model calibration, expanding libraries, and incorporating more realistic variation and manufacturing constraints would significantly improve accuracy, credibility, and usability. 
+**We welcome your contributions in helping us address and overcome these limitations!**
 
-We welcome your contributions in helping us address and overcome these limitations!
 ---
 
 
