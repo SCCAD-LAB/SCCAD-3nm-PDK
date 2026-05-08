@@ -4,7 +4,7 @@ SCCAD 3nm PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a
 
 - Flexible power delivery options – Supports both front-side and buried power rails for studying advanced power distribution schemes.
 - Dual-side BEOL support – Enables exploration of backside routing and advanced interconnect architectures.
-- Customizable PDK – Enables researchers to <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PDK%20Development">customize our PDK contents</a> including device, interconnect, and cells and explore new design methodologies.
+- Customizable PDK – Enables researchers to <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PDK%20Development">modify PDK contents</a> including device, interconnect, and cells and explore new design methodologies.
 - Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Synopsys">Synopsys</a> physical desig flows.
 
 ### Strengths
