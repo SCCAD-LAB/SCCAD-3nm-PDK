@@ -7,6 +7,10 @@ SCCAD 3nm PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a
 - Customizable PDK – Enables researchers to <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PDK%20Development">modify PDK contents</a> including device, interconnect, cells, and place/route flow and explore new design methodologies.
 - Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Synopsys">Synopsys</a> physical desig flows.
 
+### Methodologies
+Our device model is built from physics-based TCAD simulations of nanosheet FETs and calibrated to IMEC’s 3 nm reference data, then converted into a BSIM-CMG compact model using curve fitting for circuit-level use. Our interconnect model is built by scaling an existing PDK (ASAP7), assigning resistance and capacitance values from literature, and generating RC parasitics using extraction tools such as StarRC. Our DRC rule deck is derived from ASAP7-style predictive rules, extended with constraints from published 3 nm GAAFET and BPR research, and implemented as Synopsys IC Validator runsets for academic DTCO use. Our PEX rule deck is a predictive extraction technology generated from ITF/ICT interconnect definitions using StarRC and Quantus/QRC, based on ASAP7-style BEOL scaling and extended for 3 nm GAAFET, BPR, and BSP structures.
+
+
 ### Strengths
 SCCAD 3nm is a modern, research-focused PDK that captures key aspects of advanced-node design, including GAAFET devices, advanced BEOL features (e.g., buried power rails), and support for multiple PnR tools. It builds on standard compact modeling frameworks (BSIM-class models), IRDS-guided scaling, and prior academic PDKs such as ASAP7. While not silicon-calibrated, it is internally consistent and sufficiently complete to support end-to-end digital implementation and enable meaningful qualitative analysis. 
 
