@@ -1,6 +1,6 @@
 # SCCAD 3nm PDK 
 
-SCCAD-3nm-PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a href="https://sites.usc.edu/sccad"> Southern California Computer-Aided Design (SCCAD) Group</a> at the University of Southern California (USC). This PDK is intended for academic research and educational use, enabling exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO). Our key features include:
+SCCAD 3nm PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a href="https://sites.usc.edu/sccad"> Southern California Computer-Aided Design (SCCAD) Lab</a> at the University of Southern California (USC). This PDK is intended for academic research and educational use, enabling exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO). Our key features include:
 
 - Flexible power delivery options – Supports both front-side and buried power rails for studying advanced power distribution schemes.
 - Dual-side BEOL support – Enables exploration of backside routing and advanced interconnect architectures.
@@ -10,9 +10,7 @@ Our PDK works with the following EDA tools:
 
 | **Synopsys Users** | **Cadence Users** | **OpenROAD Users** |
 |:---:|:---:|:---:|
-| <a href="./PDK-Synopsys"><img src="https://img.shields.io/badge/Synopsys-PDK-purple?style=for-the-badge&logo=synopsys" height="50"></a> 
-| <a href="./PDK-Cadence"><img src="https://img.shields.io/badge/Cadence-PDK-red?style=for-the-badge&logo=cadence" height="50"></a> 
-| <a href="./PDK-OpenROAD"><img src="https://img.shields.io/badge/OpenROAD-PDK-green?style=for-the-badge" height="50"></a> |
+| <a href="./PDK-Synopsys"><img src="https://img.shields.io/badge/Synopsys-PDK-purple?style=for-the-badge&logo=synopsys" height="50"></a>| <a href="./PDK-Cadence"><img src="https://img.shields.io/badge/Cadence-PDK-red?style=for-the-badge&logo=cadence" height="50"></a> | <a href="./PDK-OpenROAD"><img src="https://img.shields.io/badge/OpenROAD-PDK-green?style=for-the-badge" height="50"></a> |
 
 
 
