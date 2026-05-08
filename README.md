@@ -25,13 +25,12 @@ Key limitations include the lack of silicon-calibrated device and interconnect m
 
 ### Contributors
 
-This PDK was developed under the supervision of **Prof. Sung Kyu Lim**.
-
+We gratefully acknowledge the following contributors:
 | Name | Contribution |
 | --- | --- |
 | **Junsik Yoon (Synopsys)** | PDK Development |
 | **Sandra Shaji (Samsung)** | PDK Development |
-| **Sungwoo Jung (Georgia Tech)** | GitHub page and documentation |
+| **Sungwoo Jung (Georgia Tech)** | PDK update, GitHub page build and documentation |
 | **Zheng Yang (Georgia Tech)** | OpenROAD setup and compatibility |
 ---
 
