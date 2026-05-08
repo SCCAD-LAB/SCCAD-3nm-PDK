@@ -32,7 +32,7 @@ We gratefully acknowledge the following contributors:
 | **Sandra Shaji (Samsung)** | PDK development |
 | **Sungwoo Jung (Georgia Tech)** | PDK update, GitHub page development and documentation |
 | **Zheng Yang (Georgia Tech)** | OpenROAD setup and compatibility |
----
+
 
 ### Future Plans
 
