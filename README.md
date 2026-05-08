@@ -33,10 +33,10 @@ Current limitations include the lack of silicon-calibrated device and interconne
 We gratefully acknowledge the following contributors:
 | Name | Contribution |
 | --- | --- |
-| **Junsik Yoon (Synopsys)** | PDK development |
-| **Sandra Shaji (Samsung)** | PDK development |
-| **Sungwoo Jung (Georgia Tech)** | PDK update, GitHub page development and documentation |
-| **Zheng Yang (Georgia Tech)** | OpenROAD setup and compatibility |
+| Junsik Yoon (Synopsys) | PDK development |
+| Sandra Shaji (Samsung) | PDK development |
+| Sungwoo Jung (Georgia Tech) | PDK update, GitHub page development and documentation |
+| Zheng Yang (Georgia Tech) | OpenROAD setup and compatibility |
 
 
 ### Future Plans
