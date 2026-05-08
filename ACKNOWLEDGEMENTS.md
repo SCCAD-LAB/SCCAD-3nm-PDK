@@ -2,7 +2,6 @@
 
 The development of this 3nm GAA PDK was made possible by referencing three existing open-source PDKs. We gratefully acknowledge the contributions of the following projects, whose prior work served as valuable references throughout this development:
 
-## Reference PDKs
 
 **1. ASAP7 PDK** 
 - GitHub page: https://github.com/The-OpenROAD-Project/asap7
