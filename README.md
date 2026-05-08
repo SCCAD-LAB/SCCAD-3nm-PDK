@@ -23,7 +23,7 @@ Key limitations include the lack of silicon-calibrated device and interconnect m
 
 
 
-## Contributors
+### Contributors
 
 This PDK was developed under the supervision of **Prof. Sung Kyu Lim**.
 
@@ -35,13 +35,12 @@ This PDK was developed under the supervision of **Prof. Sung Kyu Lim**.
 | **Zheng Yang (Georgia Tech)** | OpenROAD setup and compatibility |
 ---
 
-## Future Plans
+### Future Plans
 
 We plan to support the following contents in the future:
 
-1. Physical Design Flow Support for 3D IC
-2. Backside Clock, Signal, and Power Routing 
-3. Physical Design Support for 2.5D Heterogeneous Integration
+1. Support for 3D IC
+2. Support for 2.5D Heterogeneous Integration
 
 
 
