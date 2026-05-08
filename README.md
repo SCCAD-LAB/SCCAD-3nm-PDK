@@ -38,8 +38,8 @@ We gratefully acknowledge the following contributors:
 
 We plan to support the following contents in the future:
 
-1. Support for 3D IC
-2. Support for 2.5D Heterogeneous Integration
+1. Support for 3D IC design and simulation
+2. Support for 2.5D IC design and simulation
 
 
 
