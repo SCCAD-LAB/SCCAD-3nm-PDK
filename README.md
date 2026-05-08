@@ -13,7 +13,11 @@ Our PDK works with the following EDA tools:
 
 
 ### Strengths
-SCCAD 3nm is a modern, research-focused PDK that captures key aspects of advanced-node design, including GAAFET devices, advanced BEOL features (e.g., buried power rails), and support for multiple PnR tools. It builds on standard compact modeling frameworks (BSIM-class models), IRDS-guided scaling, and prior academic PDKs such as ASAP7. While not silicon-calibrated, it is internally consistent and sufficiently complete to support end-to-end digital implementation and enable meaningful qualitative analysis.
+SCCAD 3nm is a modern, research-focused PDK that captures key aspects of advanced-node design, including GAAFET devices, advanced BEOL features (e.g., buried power rails), and support for multiple PnR tools. It builds on standard compact modeling frameworks (BSIM-class models), IRDS-guided scaling, and prior academic PDKs such as ASAP7. While not silicon-calibrated, it is internally consistent and sufficiently complete to support end-to-end digital implementation and enable meaningful qualitative analysis. Our key features include:
+
+- Flexible power delivery options – Supports both front-side and buried power rails for studying advanced power distribution schemes.
+- Dual-side BEOL support – Enables exploration of backside routing and advanced interconnect architectures.
+- Modifiable PDK – Enables researchers to customize technology parameters and explore new design methodologies.
 
 ### Killer Apps
 SCCAD 3nm is well-suited for DTCO research, CAD tool development, and architectural exploration at advanced nodes, particularly for studying the impact of emerging device structures, interconnect strategies, and power delivery schemes. It also serves as a useful platform for benchmarking PnR tools (Cadence, Synopsys, OpenROAD) in a “3nm-like” context and for exploring design ideas beyond the scope of older PDKs. When used alongside ASAP7, it enables stronger cross-node validation of observed trends.
