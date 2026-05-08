@@ -10,8 +10,6 @@ Our PDK works with the following EDA tools:
 
 
 
----
-
 ### Strengths:
 SCCAD 3nm is a modern, research-focused PDK that captures key aspects of advanced-node design, including GAAFET devices, advanced BEOL features (e.g., buried power rails), and support for multiple PnR tools. It builds on standard compact modeling frameworks (BSIM-class models), IRDS-guided scaling, and prior academic PDKs such as ASAP7. While not silicon-calibrated, it is internally consistent and sufficiently complete to support end-to-end digital implementation and enable meaningful qualitative analysis.
 
