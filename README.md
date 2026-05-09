@@ -15,7 +15,7 @@ The DRC rule deck is derived from ASAP7-style predictive rules and augmented wit
 This overall methodology follows the approach described in our <a href="https://sites.usc.edu/sccad/islped23-sandra">reference paper</a>.
 
 
-## Killer Apps
+## Use Cases
 SCCAD 3nm is well suited for DTCO research, CAD tool development, and architectural exploration at advanced technology nodes, particularly for analyzing the impact of emerging device architectures, interconnect schemes, and power delivery strategies. It provides a practical platform for benchmarking PnR tools (Cadence, Synopsys, OpenROAD) in a “3 nm–like” environment and for exploring design concepts beyond the limits of legacy PDKs. When used alongside ASAP7, it enables more robust cross-node validation of observed trends.
 
 The SCCAD 3nm kit is internally consistent and sufficiently complete to support end-to-end digital implementation, enabling meaningful qualitative analysis.
