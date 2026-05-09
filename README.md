@@ -7,7 +7,7 @@ SCCAD 3nm PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a
 - Customizable PDK – Enables researchers to <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PDK%20Development">modify PDK contents</a> including device, interconnect, cells, and place/route flow and explore new design methodologies.
 - Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Synopsys">Synopsys</a> physical design flows.
 
-### Methodology
+## Methodology
 Our device model is developed from physics-based TCAD simulations of nanosheet FETs, calibrated to IMEC’s 3 nm reference data, and translated into a BSIM-CMG compact model through curve fitting for circuit-level applications. The interconnect model is constructed by scaling the ASAP7 PDK according to IRDS projections, assigning resistance and capacitance values from the literature, and generating RC parasitics using extraction tools such as StarRC.
 
 The DRC rule deck is derived from ASAP7-style predictive rules and augmented with constraints from published 3 nm GAAFET and buried power rail (BPR) research, then implemented as Synopsys IC Validator runsets for academic DTCO studies. Similarly, the PEX rule deck is a predictive extraction technology built from ITF/ICT interconnect definitions using StarRC and Quantus/QRC, based on ASAP7-style BEOL scaling and extended to support 3 nm GAAFET, BPR, and BSP structures.
@@ -15,7 +15,7 @@ The DRC rule deck is derived from ASAP7-style predictive rules and augmented wit
 This overall methodology follows the approach described in our <a href="https://sites.usc.edu/sccad/islped23-sandra">reference paper</a>.
 
 
-### Killer Apps
+## Killer Apps
 SCCAD 3nm is well suited for DTCO research, CAD tool development, and architectural exploration at advanced technology nodes, particularly for analyzing the impact of emerging device architectures, interconnect schemes, and power delivery strategies. It provides a practical platform for benchmarking PnR tools (Cadence, Synopsys, OpenROAD) in a “3 nm–like” environment and for exploring design concepts beyond the limits of legacy PDKs. When used alongside ASAP7, it enables more robust cross-node validation of observed trends.
 
 The SCCAD 3nm kit is internally consistent and sufficiently complete to support end-to-end digital implementation, enabling meaningful qualitative analysis.
