@@ -21,23 +21,21 @@ SCCAD 3nm is well suited for DTCO research, CAD tool development, and architectu
 The SCCAD 3nm kit is internally consistent and sufficiently complete to support end-to-end digital implementation, enabling meaningful qualitative analysis.
 
 
-### Ways to Customize the PDK
+## Ways to Customize the PDK
 SCCAD 3nm supports customization through its open, modular structure, with directly editable device models, interconnect definitions (tech LEF/RC), standard cell libraries, and PnR flows. Users can modify parameters, extend or redesign cells, and adjust implementation flows, then evaluate the impact using the provided end-to-end flow and sample designs. Although these updates are largely manual, the transparency enables flexible, full-stack experimentation.
 
-### Room for Improvement
+## Room for Improvement
 Current limitations include the lack of silicon-calibrated device and interconnect models, a relatively small standard cell library, and simplified signoff infrastructure (DRC/LVS, variability, reliability, extraction). Limited co-optimization across devices, interconnect, and libraries can also lead to skewed PPA if not carefully managed. Enhancing model calibration, expanding libraries, and incorporating more realistic variation and manufacturing constraints would significantly improve accuracy, credibility, and usability. 
 (*We welcome your contributions in helping us address and overcome these limitations.*)
 
----
 
-### Publication
+## Publication
 - PDK development: <a href="https://sites.usc.edu/sccad/islped23-sandra">Sandra Shaji, et al, “A Comparative Study on Front-Side, Buried and Back-Side Power Rail topologies in 3nm Technology Node”, ACM/IEEE International Symposium on Low Power Electronics and Design, 2023.</a>
 - Backside power routing using the PDK: <a href="https://sites.usc.edu/sccad/files/2026/05/vlsi24-1.pdf">Pruek Vanna-iampikul, et al, “Back-side Design Methodology for Power Delivery Network and Clock Routing”, IEEE Symposium on VLSI Technology & Circuits, 2024.</a>
 - Backside clock routing using the PDK: <a href="https://sites.usc.edu/sccad/3649329.3657333">Nesara Eranna Bethur, et al, “GNN-assisted Back-side Clock Routing Methodology for Advance Technologies”, ACM Design Automation Conference, 2024.</a> 
 
----
 
-### Contributors
+## Contributors
 
 We gratefully acknowledge the following contributors:
 | Name | Contribution |
@@ -48,7 +46,7 @@ We gratefully acknowledge the following contributors:
 | Zheng Yang (Georgia Tech) | OpenROAD setup and compatibility |
 
 
-### Future Plans
+## Future Plans
 
 We plan to support the following contents in the future:
 
@@ -56,10 +54,6 @@ We plan to support the following contents in the future:
 2. Support for 2.5D IC design and simulation
 
 
-
-
----
-
-### Contact
+## Contact
 
 For questions or contributions, please contact the SCCAD Lab: Sungwoo Jung (sw.jung@gatech.edu), Robert Huang (yhhuang@gatech.edu), or Sung Kyu Lim (limsung@usc.edu).
