@@ -27,9 +27,9 @@ Current limitations include the lack of silicon-calibrated device and interconne
 ---
 
 ### Publication
-- PDK development: <a href="https://sites.usc.edu/sccad/islped23-sandra">Sandra Shaji, Lingjun Zhu, Junsik Yoon, and Sung Kyu Lim, “A Comparative Study on Front-Side, Buried and Back-Side Power Rail topologies in 3nm Technology Node”, ACM/IEEE International Symposium on Low Power Electronics and Design, 2023.</a>
-- Backside power routing using the PDK: Pruek Vanna-iampikul, Hang Yang, Jungyoun Kwak, Joyce X Hu, Amaan Rahman, Nesara Eranna Bethur, Cong Hao, Shimeng Yu, and Sung Kyu Lim, “Back-side Design Methodology for Power Delivery Network and Clock Routing”, IEEE Symposium on VLSI Technology & Circuits, 2024.
-- Backside clock routing using the PDK: Nesara Eranna Bethur, Pruek Vanna-iampikul, Odysseas Zografos, Lingjun Zhu, Giuliano Sisto, Dragomir Milojevic, Alberto Garcia-Ortiz, Geert Hellings, Julien Ryckaert, Francky Catthoor, and Sung Kyu Lim, “GNN-assisted Back-side Clock Routing Methodology for Advance Technologies”, ACM Design Automation Conference, 2024. 
+- PDK development: <a href="https://sites.usc.edu/sccad/islped23-sandra">Sandra Shaji, et al, “A Comparative Study on Front-Side, Buried and Back-Side Power Rail topologies in 3nm Technology Node”, ACM/IEEE International Symposium on Low Power Electronics and Design, 2023.</a>
+- Backside power routing using the PDK: <a href="https://sites.usc.edu/sccad/files/2026/05/vlsi24-1.pdf">Pruek Vanna-iampikul, et al, “Back-side Design Methodology for Power Delivery Network and Clock Routing”, IEEE Symposium on VLSI Technology & Circuits, 2024.</a>
+- Backside clock routing using the PDK: <a href="https://sites.usc.edu/sccad/3649329.3657333">Nesara Eranna Bethur, et al, “GNN-assisted Back-side Clock Routing Methodology for Advance Technologies”, ACM Design Automation Conference, 2024.</a> 
 
 ---
 
