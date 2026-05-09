@@ -8,21 +8,25 @@ SCCAD 3nm PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a
 - Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Synopsys">Synopsys</a> physical design flows.
 
 ### Methodology
-Our device model is built from physics-based TCAD simulations of nanosheet FETs and calibrated to IMEC’s 3 nm reference data, then converted into a BSIM-CMG compact model using curve fitting for circuit-level use. Our interconnect model is built by scaling an existing PDK (ASAP7), assigning resistance and capacitance values from literature, and generating RC parasitics using extraction tools such as StarRC. Our DRC rule deck is derived from ASAP7-style predictive rules, extended with constraints from published 3 nm GAAFET and BPR research, and implemented as Synopsys IC Validator runsets for academic DTCO use. Our PEX rule deck is a predictive extraction technology generated from ITF/ICT interconnect definitions using StarRC and Quantus/QRC, based on ASAP7-style BEOL scaling and extended for 3 nm GAAFET, BPR, and BSP structures. This methodology follows the approach described in our <a href="https://sites.usc.edu/sccad/islped23-sandra">reference paper.</a>
+Our device model is developed from physics-based TCAD simulations of nanosheet FETs, calibrated to IMEC’s 3 nm reference data, and translated into a BSIM-CMG compact model through curve fitting for circuit-level applications. The interconnect model is constructed by scaling the ASAP7 PDK according to IRDS projections, assigning resistance and capacitance values from the literature, and generating RC parasitics using extraction tools such as StarRC.
 
+The DRC rule deck is derived from ASAP7-style predictive rules and augmented with constraints from published 3 nm GAAFET and buried power rail (BPR) research, then implemented as Synopsys IC Validator runsets for academic DTCO studies. Similarly, the PEX rule deck is a predictive extraction technology built from ITF/ICT interconnect definitions using StarRC and Quantus/QRC, based on ASAP7-style BEOL scaling and extended to support 3 nm GAAFET, BPR, and BSP structures.
 
-### Strengths
-SCCAD 3nm is a modern, research-focused PDK that captures key aspects of advanced-node design, including GAAFET devices, advanced BEOL features (e.g., buried power rails), and support for multiple PnR tools. It builds on standard compact modeling frameworks (BSIM-class models), IRDS-guided scaling, and prior academic PDKs such as ASAP7. While not silicon-calibrated, it is internally consistent and sufficiently complete to support end-to-end digital implementation and enable meaningful qualitative analysis. 
+This overall methodology follows the approach described in our <a href="https://sites.usc.edu/sccad/islped23-sandra">reference paper</a>.
+
 
 ### Killer Apps
-SCCAD 3nm is well-suited for DTCO research, CAD tool development, and architectural exploration at advanced nodes, particularly for studying the impact of emerging device structures, interconnect strategies, and power delivery schemes. It also serves as a useful platform for benchmarking PnR tools (Cadence, Synopsys, OpenROAD) in a “3nm-like” context and for exploring design ideas beyond the scope of older PDKs. When used alongside ASAP7, it enables stronger cross-node validation of observed trends.
+SCCAD 3nm is well suited for DTCO research, CAD tool development, and architectural exploration at advanced technology nodes, particularly for analyzing the impact of emerging device architectures, interconnect schemes, and power delivery strategies. It provides a practical platform for benchmarking PnR tools (Cadence, Synopsys, OpenROAD) in a “3 nm–like” environment and for exploring design concepts beyond the limits of legacy PDKs. When used alongside ASAP7, it enables more robust cross-node validation of observed trends.
+
+The SCCAD 3nm kit is internally consistent and sufficiently complete to support end-to-end digital implementation, enabling meaningful qualitative analysis.
+
 
 ### Ways to Customize the PDK
 SCCAD 3nm supports customization through its open, modular structure, with directly editable device models, interconnect definitions (tech LEF/RC), standard cell libraries, and PnR flows. Users can modify parameters, extend or redesign cells, and adjust implementation flows, then evaluate the impact using the provided end-to-end flow and sample designs. Although these updates are largely manual, the transparency enables flexible, full-stack experimentation.
 
 ### Room for Improvement
 Current limitations include the lack of silicon-calibrated device and interconnect models, a relatively small standard cell library, and simplified signoff infrastructure (DRC/LVS, variability, reliability, extraction). Limited co-optimization across devices, interconnect, and libraries can also lead to skewed PPA if not carefully managed. Enhancing model calibration, expanding libraries, and incorporating more realistic variation and manufacturing constraints would significantly improve accuracy, credibility, and usability. 
-(*We welcome your contributions in helping us address and overcome these limitations!*)
+(*We welcome your contributions in helping us address and overcome these limitations.*)
 
 ---
 
