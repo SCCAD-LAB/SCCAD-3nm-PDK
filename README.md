@@ -58,4 +58,4 @@ We plan to support the following contents in the future:
 
 ### Contact
 
-For questions or contributions, please contact the SCCAD Lab: Sungwoo Jung (sw.jung@gatech.edu) and Yen-Hsiang Huang (yhhuang@gatech.edu).
+For questions or contributions, please contact the SCCAD Lab: Sungwoo Jung (sw.jung@gatech.edu), Robert Huang (yhhuang@gatech.edu), or Sung Kyu Lim (limsung@usc.edu).
