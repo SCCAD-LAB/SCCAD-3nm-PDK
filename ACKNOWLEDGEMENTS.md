@@ -12,3 +12,7 @@ The development of this 3nm GAA PDK was made possible by referencing three exist
 **3. GT3 PDK** 
 - GitHub page: https://github.com/azadnaeemi/GT3
 
+**6. FakeRAM2.0** 
+- GitHub page: https://github.com/ABKGroup/FakeRAM2.0
+
+
