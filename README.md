@@ -2,7 +2,7 @@
 
 SCCAD 3nm PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a href="https://sites.usc.edu/sccad"> Southern California Computer-Aided Design (SCCAD) Lab</a> at the University of Southern California (USC). This PDK is intended for academic research and educational use, enabling exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO). Our key features include:
 
-- Flexible power delivery options – Supports both front-side and buried power rails for studying advanced power distribution schemes.
+- Flexible power delivery options – Supports both front-side and buried power rails (BPR) for studying advanced power distribution schemes.
 - Dual-side BEOL support – Enables exploration of backside routing and advanced interconnect architectures.
 - Customizable PDK – Enables researchers to <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PDK%20Development">modify PDK contents</a> including device, interconnect, cells, and place/route flow and explore new design methodologies.
 - Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/SCCAD-3nm-PDK/tree/main/PnR-Synopsys">Synopsys</a> physical design flows.
@@ -10,7 +10,7 @@ SCCAD 3nm PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a
 ## Methodology
 Our device model is developed from physics-based TCAD simulations of nanosheet FETs, calibrated to IMEC’s 3 nm reference data, and translated into a BSIM-CMG compact model through curve fitting for circuit-level applications. The interconnect model is constructed by scaling the ASAP7 PDK according to IRDS projections, assigning resistance and capacitance values from the literature, and generating RC parasitics using extraction tools such as StarRC.
 
-Our DRC rule deck is derived from the GT3 PDK, extended with constraints from published 3 nm GAAFET and BPR research, and implemented as Synopsys IC Validator runsets for academic DTCO use. Similarly, the PEX rule deck is a predictive extraction technology built from ITF/ICT interconnect definitions using StarRC and Quantus/QRC, based on ASAP7-style BEOL scaling and extended to support 3 nm GAAFET, buried power rail, and backside PDN structures.
+Our DRC rule deck is derived from the GT3 PDK, extended with constraints from published 3 nm GAAFET and BPR research, and implemented as Synopsys IC Validator runsets for academic DTCO use. Similarly, the PEX rule deck is a predictive extraction technology built from ITF/ICT interconnect definitions using StarRC and Quantus/QRC, based on ASAP7-style BEOL scaling and extended to support 3 nm GAAFET, BPR, and backside PDN structures.
 
 This overall methodology follows the approach described in our <a href="https://sites.usc.edu/sccad/islped23-sandra">reference paper</a>.
 
