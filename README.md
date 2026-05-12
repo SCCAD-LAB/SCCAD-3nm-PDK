@@ -37,8 +37,8 @@ We gratefully acknowledge the following contributors:
 
 ## Future Plans
 We plan to support the following contents in the future:
-- USC-3N-3D: 3nm PDK/ADK for 3D IC design and simulation
-- USC-3N-25D: 3nm PDK/ADK for 2.5D IC design and simulation
+- USC-3N-3D: 3nm PDK, ADK, and scripts for 3D IC design and simulation
+- USC-3N-25D: 3nm PDK, ADK, and scripts for 2.5D IC design and simulation
 
 ## Contact
 For questions or contributions, please contact the SCCAD Lab: Sungwoo Jung (sw.jung@gatech.edu), Robert Huang (yhhuang@gatech.edu), or Sung Kyu Lim (limsung@usc.edu).
