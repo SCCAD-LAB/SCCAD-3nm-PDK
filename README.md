@@ -50,8 +50,8 @@ We gratefully acknowledge the following contributors:
 
 We plan to support the following contents in the future:
 
-1. USC-3N-3D: PDK/ADK for 3D IC design and simulation
-2. USC-3N-25D: PDK/ADK for 2.5D IC design and simulation
+1. USC-3N-3D: 3nm PDK/ADK for 3D IC design and simulation
+2. USC-3N-25D: 3nm PDK/ADK for 2.5D IC design and simulation
 
 
 ## Contact
