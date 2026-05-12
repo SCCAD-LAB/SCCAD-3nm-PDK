@@ -1,4 +1,4 @@
-# SCCAD 3nm PDK 
+# USC-3N-2D (3nm PDK for 2D ICs)
 
 SCCAD 3nm PDK is an open-source 3nm Process Design Kit (PDK) developed by the <a href="https://sites.usc.edu/sccad"> Southern California Computer-Aided Design (SCCAD) Lab</a> at the University of Southern California (USC). This PDK is intended for academic research and educational use, enabling exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO). Our key features include:
 
