@@ -1,10 +1,7 @@
-# SCCAD-3nm-PDK: Sample Designs and PPA Analysis
+# Sample Designs and PPA Evaluation
 
-This repository contains sample designs and evaluation results for the SCCAD 3nm PDK.
+This repository contains sample designs and corresponding Power, Performance, and Area (PPA) results for the USC-3N-2D PDK, generated using our OpenROAD flows. The designs use front-side BEOL configurations, and the standard cells do not incorporate buried power rails (BPR).
 
-## PPA Comparison: Frontside vs. Backside-Version
-
-The following table summarizes the Power, Performance, and Area (PPA) results for two distinct designs (ECG and OpenPiton).
 
 | Benchmark           | ECG                | ECG                | OpenPiton          | OpenPiton          |
 |---------------------|--------------------|--------------------|--------------------|--------------------|
