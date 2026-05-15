@@ -9,12 +9,12 @@ USC-3N-2D is an open-source 3nm Process Design Kit (PDK) for 2D ICs developed by
 <table>
   <tr>
     <td align="center">
-  <img src="Sample%20Designs/openpiton-place.png" width="300" />
-      <b>Home Screen</b>
+  <img src="Sample%20Designs/openpiton-place.png" width="300"><br>
+      Placement
     </td>
     <td align="center">
-  <img src="Sample%20Designs/openpiton-route.png" width="300" />
-      <b>Settings Screen</b>
+  <img src="Sample%20Designs/openpiton-route.png" width="300">
+      Routing
     </td>
   </tr>
 </table>
