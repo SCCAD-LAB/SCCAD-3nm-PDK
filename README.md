@@ -6,10 +6,18 @@ USC-3N-2D is an open-source 3nm Process Design Kit (PDK) for 2D ICs developed by
 
 - Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Synopsys">Synopsys</a> physical design flows.
 
-<p align="center">
+<table>
+  <tr>
+    <td align="center">
   <img src="Sample%20Designs/openpiton-place.png" width="300" />
+      <b>Home Screen</b>
+    </td>
+    <td align="center">
   <img src="Sample%20Designs/openpiton-route.png" width="300" />
-</p>
+      <b>Settings Screen</b>
+    </td>
+  </tr>
+</table>
 
 
 ## Methodology
