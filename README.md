@@ -2,7 +2,7 @@
 USC-3N-2D is an open-source 3nm Process Design Kit (PDK) for 2D ICs developed by the <a href="https://sites.usc.edu/sccad"> Southern California Computer-Aided Design (SCCAD) Lab</a> at the University of Southern California (USC). This PDK is intended for academic research and educational use, and enables exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO). Our key features include:
 - Customizable PDK – Enables researchers to <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PDK%20Development">modify PDK contents</a> including device, interconnect, cells, and place/route flow and explore new design methodologies.
 
-- Dual-side BEOL support – Enables backside routing for power, clock, and signals, supporting advanced interconnect architectures. Our standard cells configured for backside power delivery networks (BS-PDN) integrate buried power rails (BPR) to improve routing efficiency and power integrity.
+- Dual-side BEOL support – Enables backside routing for power, clock, and signals. Our standard cells for backside power delivery networks (BS-PDN) integrate buried power rails (BPR) to improve routing efficiency and power integrity.
 
 - Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Synopsys">Synopsys</a> physical design flows. Reference collateral includes <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/Sample%20Designs/USC-3N-2D-Samples.pdf">sample designs & PPA data</a>, netlists, flow scripts, and DEF files.
 
