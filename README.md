@@ -4,7 +4,7 @@ USC-3N-2D is an open-source 3nm Process Design Kit (PDK) for 2D ICs developed by
 
 - Dual-side BEOL support – Enables backside routing for power, clock, and signals. Our standard cells for backside power delivery networks (BS-PDN) integrate buried power rails (BPR) to improve routing efficiency and power integrity.
 
-- Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Synopsys">Synopsys</a> physical design flows. Reference collateral includes <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/Sample%20Designs/USC-3N-2D-Samples.pdf">sample designs & PPA data</a>, netlists, flow scripts, and DEF files.
+- Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Synopsys">Synopsys</a> physical design flows. Reference collateral includes <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/Sample%20Designs/USC-3N-2D-Samples.pdf">sample layouts & PPA data</a>, netlists, flow scripts, and DEF files for 6 designs.
 
 
 <div align="center">
