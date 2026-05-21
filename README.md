@@ -50,7 +50,7 @@ We gratefully acknowledge the following contributors:
 | --- | --- |
 | Junsik Yoon (Synopsys) | PDK development |
 | Sandra Shaji (Samsung) | PDK development |
-| Sungwoo Jung (Georgia Tech) | PDK update, GitHub page development and documentation |
+| Sungwoo Jung (Georgia Tech) | PDK update and documentation |
 | Zheng Yang (Georgia Tech) | OpenROAD setup and compatibility |
 
 ## Future Plans
@@ -59,7 +59,7 @@ We plan to support the following contents in the future:
 - USC-3N-25D: 3nm PDK, ADK, and scripts for 2.5D IC design and simulation
 
 ## Contact
-For questions or contributions, please contact the SCCAD Lab: Sungwoo Jung (sw.jung@gatech.edu), Robert Huang (yhhuang@gatech.edu), or Sung Kyu Lim (limsung@usc.edu).
+For questions or contributions, please contact the SCCAD Lab: Robert Huang (yhhuang@gatech.edu), Sungwoo Jung (sw.jung@gatech.edu), or Sung Kyu Lim (limsung@usc.edu).
 
 
 ## Acknowledgements
