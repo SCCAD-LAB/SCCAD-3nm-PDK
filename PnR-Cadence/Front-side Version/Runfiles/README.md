@@ -74,7 +74,7 @@ A reference set used during sanity verification is available from the SCCAD-Lab 
 ### Step 1 — set environment
 
 ```bash
-export PDK_ROOT=/path/to/sccad_fspr_v_rvt
+export PDK_ROOT=/path/to/sccad_fspr
 # Optionally source your Cadence / Synopsys setup so innovus / icc2_shell are on PATH:
 # source /tools/software/cadence/setup.sh
 # source /tools/software/synopsys/setup.sh
@@ -140,7 +140,7 @@ Typical wall-clock on a 128-core host: ECG_innovus ≈ 2 h, ECG_icc2 ≈ 40 min,
 
 | Name | Required | Description |
 |---|---|---|
-| `PDK_ROOT` | yes | Root directory of the SCCAD-Lab PDK (e.g. `/path/to/sccad_fspr_v_rvt`). All other PDK paths derive from this. |
+| `PDK_ROOT` | yes | Root directory of the SCCAD-Lab PDK (e.g. `/path/to/sccad_fspr`). All other PDK paths derive from this. |
 
 ### Internally-derived variables (set by the script)
 
@@ -167,7 +167,7 @@ To override any of these, export the env var **before** invoking the launcher; t
 ### Example: override SRAM library path for OpenPiton
 
 ```bash
-export PDK_ROOT=/path/to/sccad_fspr_v_rvt
+export PDK_ROOT=/path/to/sccad_fspr
 export HARDMACROLEF_DIR=/path/to/my_sram_lef
 export HARDMACROLIB_DIR=/path/to/my_sram_lib
 bash OpenPiton_innovus.run.sh
