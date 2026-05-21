@@ -34,7 +34,7 @@
 # USER CONFIGURATION
 #=====================================================================
 # Set PDK_ROOT before invoking this script:
-#   export PDK_ROOT=/path/to/sccad_fspr_v_rvt
+#   export PDK_ROOT=/path/to/sccad_fspr
 # All other paths derive from PDK_ROOT.
 
 if { ![info exists ::env(PDK_ROOT)] } {
