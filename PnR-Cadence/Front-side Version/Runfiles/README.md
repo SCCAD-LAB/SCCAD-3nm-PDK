@@ -195,8 +195,7 @@ Detailed per-script QoR is in `VERIFICATION_REPORT.md`.
 2. **`finalTiming` STAGE not included.** Only the `normal2D` flow is in this release. To produce post-route signoff timing reports from the saved database, re-open `impl/normal2D.enc` (Innovus) or `impl_normal2D/.../design_label.route` (ICC2) and run `report_timing` / `report_power` manually.
 3. **OpenPiton has a few minor pre-existing DRCs.** Both the consolidated and original pre-consolidation runs report 4 × `max_cap` and 5 × `max_tran` violations (worst −0.005 ps). These are intrinsic to the tile floorplan + SRAM placement and are not introduced by this script set. A final `optDesign -postRoute -drv` pass would clean them; the release scripts do not run it.
 4. **OpenPiton pin files are tool-specific.** Use `OpenPiton_innovus.pin.tcl` with Innovus only, `OpenPiton_icc2.pin.tcl` with ICC2 only. The ICC2 script wraps the `source` call in `catch`, so a syntax mismatch will not abort the run — it will fall back to `place_pins -self`, which gives a reasonable but different IO placement.
-5. **OpenROAD scripts not in this release.** Equivalent consolidation for OpenROAD is planned as a separate release.
-6. **ICC2 is not bit-deterministic.** Re-running `ECG_icc2.tcl` will not produce identical WNS / TNS numbers each time; structural QoR (wirelength, cells, power) will be stable within ≤ 2 %. See `VERIFICATION_REPORT.md` §5.5.
+5. **ICC2 is not bit-deterministic.** Re-running `ECG_icc2.tcl` will not produce identical WNS / TNS numbers each time; structural QoR (wirelength, cells, power) will be stable within ≤ 2 %. See `VERIFICATION_REPORT.md` §5.5.
 
 ---
 
