@@ -41,8 +41,7 @@ Current limitations include the lack of silicon-calibrated device and interconne
 
 ## Example PnR Runs
 
-The table below links each front-side PnR example to its run script, README, and sample design folder.
-
+The table below maps each front-side PnR example to its corresponding README, run scripts, and data directories.
 | Tool | Design | README | Data Files |
 | --- | --- | --- | --- | 
 | Cadence  | ECG | [README](PnR-Cadence/Front-side%20Version/Runfiles/README.md) | [ECG](Sample%20Designs/PnR%20Sample-Cadence/ecg) |
