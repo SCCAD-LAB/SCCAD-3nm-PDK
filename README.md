@@ -6,6 +6,21 @@ USC-3N-2D is an open-source 3nm Process Design Kit (PDK) for 2D ICs developed by
 
 - Broad tool compatibility – Compatible with <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-OpenROAD">OpenROAD</a>, <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Cadence">Cadence</a>, and <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PnR-Synopsys">Synopsys</a> physical design flows. Reference collateral includes <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/Sample%20Designs/USC-3N-2D-Samples.pdf">sample layouts & PPA data</a>, netlists, flow scripts, and DEF files for 6 designs.
 
+## Example PnR Runs
+
+The table below links each front-side PnR example to its run script, README, and sample design inputs.
+
+| Tool | Design | Run script | README | Example inputs |
+| --- | --- | --- | --- | --- |
+| Cadence Innovus | ECG | [ECG_innovus.run.sh](PnR-Cadence/Front-side%20Version/Runfiles/ECG_innovus.run.sh) | [Cadence README](PnR-Cadence/Front-side%20Version/Runfiles/README.md) | [ECG sample](Sample%20Designs/PnR%20Sample-Cadence/ecg) |
+| Cadence Innovus | OpenPiton | [OpenPiton_innovus.run.sh](PnR-Cadence/Front-side%20Version/Runfiles/OpenPiton_innovus.run.sh) | [Cadence README](PnR-Cadence/Front-side%20Version/Runfiles/README.md) | [OpenPiton sample](Sample%20Designs/PnR%20Sample-Cadence/openpiton) |
+| Synopsys ICC2 | ECG | [ECG_icc2.run.sh](PnR-Synopsys/Front-side%20Version/Runfiles/ECG_icc2.run.sh) | [Synopsys README](PnR-Synopsys/Front-side%20Version/Runfiles/README.md) | [ECG sample](Sample%20Designs/PnR%20Sample-Synopsys/ecg) |
+| Synopsys ICC2 | OpenPiton | [OpenPiton_icc2.run.sh](PnR-Synopsys/Front-side%20Version/Runfiles/OpenPiton_icc2.run.sh) | [Synopsys README](PnR-Synopsys/Front-side%20Version/Runfiles/README.md) | [OpenPiton sample](Sample%20Designs/PnR%20Sample-Synopsys/openpiton) |
+| OpenROAD | ECG | [run_openroad.sh](PnR-OpenROAD/Front-side%20Version/OpenROAD_Runfiles/run_openroad.sh) + [ecg.tcl](PnR-OpenROAD/Front-side%20Version/OpenROAD_Runfiles/design_configs/ecg.tcl) | [OpenROAD README](PnR-OpenROAD/Front-side%20Version/OpenROAD_Runfiles/README.md) | [ECG sample](Sample%20Designs/PnR%20Sample-OpenROAD/ecg) |
+| OpenROAD | OpenPiton | [run_openroad.sh](PnR-OpenROAD/Front-side%20Version/OpenROAD_Runfiles/run_openroad.sh) + [openpiton.tcl](PnR-OpenROAD/Front-side%20Version/OpenROAD_Runfiles/design_configs/openpiton.tcl) | [OpenROAD README](PnR-OpenROAD/Front-side%20Version/OpenROAD_Runfiles/README.md) | [OpenPiton sample](Sample%20Designs/PnR%20Sample-OpenROAD/openpiton) |
+
+For Cadence and Synopsys ECG runs, stage the ECG sample netlist and SDC in the run directory as `point_scalar_mult.netlist.v` and `point_scalar_mult.sdc`, as described in the tool README.
+
 
 <div align="center">
 <table border="0">
