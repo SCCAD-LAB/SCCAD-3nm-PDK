@@ -43,9 +43,9 @@ Current limitations include the lack of silicon-calibrated device and interconne
 
 The table below links each front-side PnR example to its run script, README, and sample design folder.
 
-| Tool | Design | Run script | README | Example inputs |
+| Tool | Design | README | Run script | Example inputs |
 | --- | --- | --- | --- | --- |
-| Cadence  | ECG | [ECG_innovus.run.sh](PnR-Cadence/Front-side%20Version/Runfiles/ECG_innovus.run.sh) | [README](PnR-Cadence/Front-side%20Version/Runfiles/README.md) | [ECG sample](Sample%20Designs/PnR%20Sample-Cadence/ecg) |
+| Cadence  | ECG | [README](PnR-Cadence/Front-side%20Version/Runfiles/README.md) | [ECG_innovus.run.sh](PnR-Cadence/Front-side%20Version/Runfiles/ECG_innovus.run.sh) | [ECG sample](Sample%20Designs/PnR%20Sample-Cadence/ecg) |
 |   | OpenPiton | [OpenPiton_innovus.run.sh](PnR-Cadence/Front-side%20Version/Runfiles/OpenPiton_innovus.run.sh) | [README](PnR-Cadence/Front-side%20Version/Runfiles/README.md) | [OpenPiton sample](Sample%20Designs/PnR%20Sample-Cadence/openpiton) |
 | Synopsys  | ECG | [ECG_icc2.run.sh](PnR-Synopsys/Front-side%20Version/Runfiles/ECG_icc2.run.sh) | [README](PnR-Synopsys/Front-side%20Version/Runfiles/README.md) | [ECG sample](Sample%20Designs/PnR%20Sample-Synopsys/ecg) |
 |  | OpenPiton | [OpenPiton_icc2.run.sh](PnR-Synopsys/Front-side%20Version/Runfiles/OpenPiton_icc2.run.sh) | [README](PnR-Synopsys/Front-side%20Version/Runfiles/README.md) | [OpenPiton sample](Sample%20Designs/PnR%20Sample-Synopsys/openpiton) |
