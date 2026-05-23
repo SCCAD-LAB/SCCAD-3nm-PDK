@@ -199,12 +199,6 @@ Detailed per-script QoR is in `VERIFICATION_REPORT.md`.
 
 ---
 
-## 7. License
-
-*(placeholder — to be set by Prof. Lim before public release)*
-
----
-
 ## 8. Acknowledgements
 
 See top-level `ACKNOWLEDGEMENTS.md` (provided separately with the full release bundle) for SCCAD-Lab contributors and academic acknowledgements.
