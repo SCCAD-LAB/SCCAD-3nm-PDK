@@ -2,7 +2,6 @@
 * Name:         [ ICV_3nm_drcclean ]
 * Owner:        [ GTCAD ]
 * Last Change:  [ 2026/05/01 ]
-* By:           [ Claude (autonomous WS2 stage) ]
 * Synopsis:     [ Scoped LVS deck for the 6T_drcclean trial. Identical to the
 *                 production oa/ICV_3nm.rs except: (1) the fin layer assign is
 *                 commented out; (2) every `(fin and Active)`, `(nactive and fin)`,
