@@ -6,7 +6,6 @@
 # Floorplan   : 57 x 57 um (margins 0)
 # PDK family  : 3nm GAA FSPR (Front-Side Power Rail)
 # Author      : SCCAD Lab
-# License     : (placeholder -- to be set by Prof. Lim)
 #
 # Required inputs in current working directory:
 #   - point_scalar_mult.netlist.v   (synthesized Verilog netlist)
