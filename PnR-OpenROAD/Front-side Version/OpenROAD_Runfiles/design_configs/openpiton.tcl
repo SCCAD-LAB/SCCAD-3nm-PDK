@@ -1,5 +1,4 @@
 # OpenPiton tile design config.
-# Paths are relative to OpenROAD_Runfiles/.
 #
 # The public tree includes tile.netlist.v and tile.sdc under Sample Designs.
 # Full rerun from source may also need memory macro Liberty views if timing
@@ -7,11 +6,20 @@
 
 set design "openpiton_tile"
 set top_module "tile"
-set synth_verilog "../../../Sample Designs/PnR Sample-OpenROAD/openpiton/tile.netlist.v"
-set sdc_file "../../../Sample Designs/PnR Sample-OpenROAD/openpiton/tile.sdc"
 
-set openpiton_macro_lef_dir "../../../Sample Designs/PnR Sample-Cadence/openpiton/HARD-LEF (OpenPiton)"
-set openpiton_macro_lib_dir "../../../openpiton_mem_L3_256k/2d_hard_lib"
+if {![info exists pdk_root]} {
+  if {![info exists ::env(PDK_ROOT)]} {
+    puts "ERROR: please set PDK_ROOT to the USC-3N-2D repository root before sourcing this script"
+    exit 1
+  }
+  set pdk_root [file normalize $::env(PDK_ROOT)]
+}
+
+set synth_verilog [file join $pdk_root "Sample Designs/PnR Sample-OpenROAD/openpiton/tile.netlist.v"]
+set sdc_file [file join $pdk_root "Sample Designs/PnR Sample-OpenROAD/openpiton/tile.sdc"]
+
+set openpiton_macro_lef_dir [file join $pdk_root "openpiton_mem_L3_256k/2d_hard_lef"]
+set openpiton_macro_lib_dir [file join $pdk_root "openpiton_mem_L3_256k/2d_hard_lib"]
 set extra_lef [glob -nocomplain "$openpiton_macro_lef_dir/*.lef"]
 set extra_liberty [glob -nocomplain "$openpiton_macro_lib_dir/*.lib"]
 
