@@ -11,6 +11,9 @@ Run from this folder:
 OPENROAD_BIN=/path/to/openroad bash run_openroad.sh 3nm_run.tcl
 ```
 
+The launcher automatically sets `PDK_ROOT` to the USC-3N-2D repository root
+unless you export `PDK_ROOT` yourself.
+
 By default this runs ECG:
 
 ```text
@@ -38,6 +41,7 @@ bash run_openroad.sh 3nm_run.tcl
 Or directly:
 
 ```bash
+export PDK_ROOT=/path/to/USC-3N-2D
 openroad -no_init 3nm_run.tcl
 ```
 
@@ -46,6 +50,7 @@ openroad -no_init 3nm_run.tcl
 Before running full P&R, check that all inputs load:
 
 ```bash
+export PDK_ROOT=/path/to/USC-3N-2D
 openroad -no_init check_openroad_inputs.tcl
 ```
 
@@ -86,10 +91,10 @@ check_openroad_inputs.tcl Fast input-load smoke test
   |-- flow_helpers.tcl
   |-- 3nm/3nm.vars
   |-- design_configs/<design>.tcl
-  |     |-- ../TECH-LEF/3nm_GAA_FSPR.tech.lef
-  |     |-- ../LEF/3nm_GAA_FSPR.lef
-  |     |-- ../LIB/3nm_GAA_FSPR_rvt_nldm.lib
-  |     |-- ../RC/setRC.tcl
+  |     |-- $PDK_ROOT/PnR-OpenROAD/Front-side Version/TECH-LEF/3nm_GAA_FSPR.tech.lef
+  |     |-- $PDK_ROOT/PnR-OpenROAD/Front-side Version/LEF/3nm_GAA_FSPR.lef
+  |     |-- $PDK_ROOT/PnR-OpenROAD/Front-side Version/LIB/3nm_GAA_FSPR_rvt_nldm.lib
+  |     |-- $PDK_ROOT/PnR-OpenROAD/Front-side Version/RC/setRC.tcl
   |     |-- 3nm/3nm.pdn.tcl
   |     `-- 3nm/3nm.tracks
   `-- flow.tcl
