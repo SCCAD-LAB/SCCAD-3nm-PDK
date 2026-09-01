@@ -17,12 +17,14 @@ The scripts are end-to-end (synthesis netlist → routed `.def`) and have been s
 | `OpenPiton_innovus.tcl` | Cadence Innovus | `tile` (OpenPiton) | Self-contained PnR script (normal2D), 28-macro floorplan |
 | `OpenPiton_innovus.run.sh` | bash | — | Launcher for OpenPiton + Innovus |
 | `OpenPiton_innovus.pin.tcl` | — | `tile` | IO-pin placement in **Innovus syntax** (`moveGroupPins`). Rename to `tile.pin.tcl` before the run. |
+| `OpenPiton_1GHz.sdc` | SDC | `tile` | Reference 1 GHz constraints used for the OpenPiton Innovus validation run. Rename to `tile.sdc` before the run. |
 | `OpenPiton_icc2.tcl` | Synopsys ICC2 | `tile` (OpenPiton) | Self-contained PnR script (normal2D), 28-macro floorplan |
 | `OpenPiton_icc2.run.sh` | bash | — | Launcher for OpenPiton + ICC2 |
 | `OpenPiton_icc2.pin.tcl` | — | `tile` | IO-pin placement in **ICC2 syntax** (`set_individual_pin_constraints`). Rename to `tile.pin.tcl` before the run. |
-| `OpenPiton_FloorPlan.def` | — | `tile` | Pre-placed locations for the 28 SRAM macros (~5 KB DEF). Rename to `impl/FloorPlan.def` before the run. |
+| `OpenPiton_FloorPlan.def` | — | `tile` | Pre-placed locations for the 28 SRAM macros in the 333.102 µm × 401.640 µm floorplan. Rename to `impl/FloorPlan.def` before the run. |
 
-Total: **11 files** (4 TCL scripts + 4 launchers + 2 pin files + 1 floorplan DEF).
+The OpenPiton Innovus setup uses the script, launcher, pin file, floorplan DEF,
+and reference SDC listed above.
 
 ---
 
@@ -94,11 +96,13 @@ cp /path/to/my/point_scalar_mult.netlist.v .
 cp /path/to/my/point_scalar_mult.sdc       .
 ```
 
-For OpenPiton runs, additionally stage the pin file and the floorplan DEF:
+For OpenPiton runs, additionally stage the pin file and the floorplan DEF. To
+reproduce the 1 GHz Innovus setup, stage the reference SDC as well:
 
 ```bash
 # Innovus:
 cp /path/to/release/OpenPiton_innovus.pin.tcl ./tile.pin.tcl
+cp /path/to/release/OpenPiton_1GHz.sdc       ./tile.sdc
 
 # ICC2:
 cp /path/to/release/OpenPiton_icc2.pin.tcl    ./tile.pin.tcl
@@ -107,6 +111,11 @@ cp /path/to/release/OpenPiton_icc2.pin.tcl    ./tile.pin.tcl
 mkdir -p impl
 cp /path/to/release/OpenPiton_FloorPlan.def ./impl/FloorPlan.def
 ```
+
+The OpenPiton Innovus setup uses a fixed 333.102 µm × 401.640 µm die,
+0.70 standard-cell density, and the front-side `M1`–`M8` routing stack. The
+floorplan DEF and Innovus pin file are a matched pair; update both if the die
+geometry changes.
 
 ### Step 3 — run
 

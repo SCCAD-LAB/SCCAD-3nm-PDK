@@ -2,8 +2,8 @@
 # OpenPiton_innovus.tcl -- Self-contained PnR script (normal2D)
 #
 # Target tool : Cadence Innovus
-# Design      : OpenPiton tile (12 SRAM macros)
-# Floorplan   : 300.006 x 362.01 um (margins 2)
+# Design      : OpenPiton tile (28 SRAM macros)
+# Floorplan   : 333.102 x 401.640 um (margins 2)
 # PDK family  : 3nm GAA FSPR (Front-Side Power Rail)
 # Author      : SCCAD Lab
 #
@@ -47,7 +47,7 @@ set ::env(TCH_DIR)      "$techDir/2d_tch"
 # Uncomment if your PDK has a 2d_captbl dir:
 #   set ::env(CAPTBL_DIR) "$techDir/2d_captbl"
 
-# OpenPiton hard-macro paths (12 SRAM/RF macros).  These are auto-set from
+# OpenPiton hard-macro paths (28 SRAM/RF macros).  These are auto-set from
 # the standard PDK layout; override before invoking the script if your
 # SRAM library lives elsewhere.
 if {![info exists ::env(HARDMACROLEF_DIR)] && [file isdirectory "$techDir/openpiton_mem_L3_256k/2d_hard_lef"]} {
@@ -90,14 +90,14 @@ set vars(Route,DRIter)           20
 set vars(Place,SiteDef)          "core"
 set vars(Route,RedundantVias)    0
 
-set vars(FloorPlan,AspectRatio)     1
+set vars(FloorPlan,AspectRatio)     0.829349
 set vars(FloorPlan,StdCellDensity)  0.7
 set vars(FloorPlan,LeftMargin)      2
 set vars(FloorPlan,BottomMargin)    2
 set vars(FloorPlan,RightMargin)     2
 set vars(FloorPlan,TopMargin)       2
-set vars(FloorPlan,Width)           300.006
-set vars(FloorPlan,Height)          362.01
+set vars(FloorPlan,Width)           333.102
+set vars(FloorPlan,Height)          401.640
 
 set vars(ClockUncertainty,preCTS)    0
 set vars(ClockUncertainty,CTS)       0
@@ -473,7 +473,7 @@ if { [info exists vars(ExtractionEngine,effort)] && $vars(ExtractionEngine,effor
 if { [file exists "config.tcl"] }     { source config.tcl }
 if { [file exists "config_flp.tcl"] } { source config_flp.tcl }
 
-# OpenPiton ships a pre-placed macro DEF (12 SRAM macros).  Read it here if
+# OpenPiton ships a pre-placed macro DEF (28 SRAM macros).  Read it here if
 # present.  Without this DEF, the floorplan will be empty of macros.
 if { [file exists "./impl/FloorPlan.def"] } {
     defIn -floorplan ./impl/FloorPlan.def
